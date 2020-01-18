@@ -1,7 +1,7 @@
-
+#!/usr/bin/env python
 # coding: utf-8
 
-# In[15]:
+# In[30]:
 
 
 import pandas as pd
@@ -14,7 +14,15 @@ from cms_modules.utils import model_summary_to_string
 from cms_modules.logging import Logger
 
 
-# In[16]:
+# In[ ]:
+
+
+ecbdl14_root = '~/git/ECBDL14-Classification/'
+sys.path.append(ecbdl14_root)
+from model import create_model, KerasAucCallback
+
+
+# In[31]:
 
 
 debug = True
@@ -22,22 +30,12 @@ debug = True
 
 # ### Define I/O Paths
 
-# In[17]:
-
-
-ecbdl14_root = '/home/jjohn273/git/ECBDL14-Classification'
-sys.path.append(ecbdl14_root)
-print('sys.path = ', sys.path)
-
-from model import create_model, KerasAucCallback
-
-
 # In[18]:
 
 
 # inputs
 data_path = os.path.join(ecbdl14_root, 'data/ecbdl14.onehot.sample.hdf')
-data_key = 'test'
+data_key = 'train'
 
 # outputs
 now = datetime.datetime.today()
@@ -82,17 +80,17 @@ from sklearn.model_selection import StratifiedKFold, ParameterGrid
 
 stratified_cv = StratifiedKFold(n_splits=3, shuffle=True)
 
-# hidden_layers = [32],[64],[32,32],[64,64],[128,128],[128,64],[32,32,32],[64,64,64]
+hidden_layers = [[32,32],[64,64],[128,128],[128,64],[32,32,32],[64,64,64],[128,64,32,16]]
 
 param_grid = dict(
-  hidden_layers=[[32,32]],
+  hidden_layers=hidden_layers,
   learn_rate=[1e-3],
-  batch_size=[128,256],
-  dropout_rate=[0.5],
-  batchnorm=[True])
+  batch_size=[128],
+  dropout_rate=[None, 0.5],
+  batchnorm=[True, False])
 
-epochs = 10
-score_freq = 2
+epochs = 300
+score_freq = 5
 
 param_grid_options = list(ParameterGrid(param_grid))
 
