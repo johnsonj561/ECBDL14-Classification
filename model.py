@@ -1,6 +1,6 @@
 from sklearn.metrics import roc_auc_score
 import tensorflow as tf
-Keras = tf.contrib.keras
+Keras = tf.keras
 Sequential = Keras.models.Sequential
 Activation = Keras.layers.Activation
 Adam = Keras.optimizers.Adam

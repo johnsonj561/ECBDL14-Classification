@@ -25,8 +25,10 @@ debug = True
 # In[17]:
 
 
-ecbdl14_root = '~/git/ECBDL14-Classification'
+ecbdl14_root = '/home/jjohn273/git/ECBDL14-Classification'
 sys.path.append(ecbdl14_root)
+print('sys.path = ', sys.path)
+
 from model import create_model, KerasAucCallback
 
 
