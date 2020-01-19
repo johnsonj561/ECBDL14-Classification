@@ -36,13 +36,14 @@ def create_model(input_dim, config):
 
 
 class KerasAucCallback(Keras.callbacks.Callback):
-    def __init__(self, frequency, x, y):
+    def __init__(self, frequency, x, y, logger=None):
         print(f'Initializing AUC Callback')
         self.frequency = frequency
         self.x = x
         self.y = y
         self.auc_scores = []
         self.epochs = []
+        self.logger = logger
 
     def on_epoch_end(self, epoch, logs, generator=None):
         if epoch % self.frequency == 0:
@@ -50,7 +51,8 @@ class KerasAucCallback(Keras.callbacks.Callback):
             auc = roc_auc_score(self.y, probs)
             self.auc_scores.append(auc)
             self.epochs.append(f'ep{epoch}')
-            print('Epoch: {epoch}\tAUC: {auc}')
+            if self.logger != None:
+                self.logger.log_time(f'Epoch: {epoch}\tAUC: {auc}').write_to_file()
 
     def get_epochs(self):
         return self.epochs
