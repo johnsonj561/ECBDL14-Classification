@@ -65,7 +65,7 @@ def write_results(file, results):
 ############################################
 # Initialize Logger
 ############################################
-log_file = f'{ts}-{config_value}'
+log_file = f'logs/{ts}-{config_value}'
 logger = Logger(log_file)
 logger.log_time('Starting grid search job')
 logger.log_time(f'Outputs being written to {[validation_auc_outputs,train_auc_outputs]}')
