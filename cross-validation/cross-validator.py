@@ -100,7 +100,7 @@ for fold, (train_index, validate_index) in enumerate(stratified_cv.split(x, y)):
 
     # setup callbacks to monitor auc
     validation_auc_callback = KerasAucCallback(callback_freq, x_valid, y_valid)
-    train_auc_callback = KerasAucCallback(callback_freq, x_train, y_train)
+    train_auc_callback = KerasAucCallback(callback_freq, x_train, y_train, logger)
     callbacks = [validation_auc_callback, train_auc_callback]
 
     # create model and log it's description on 1st run
