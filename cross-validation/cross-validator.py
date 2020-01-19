@@ -51,7 +51,7 @@ config_value = f'layers:{hidden_layers_markup}-learn_rate:{config.get("learn_rat
 config_value += f'-batch_size:{config.get("batch_size")}-dropout_rate:{config.get("dropout_rate")}-bathcnorm:{config.get("batchnorm")}'
 
 if not os.path.isfile(train_auc_outputs):
-    results_header = 'config,fold,' + ','.join([f'ep_{i}' for i in range(epochs) if i%callback_freq == 0])
+    results_header = 'config,' + ','.join([f'ep_{i}' for i in range(epochs) if i%callback_freq == 0])
     output_files = [train_auc_outputs, validation_auc_outputs]
     output_headers = [results_header,results_header]
     for file, header in zip(output_files, output_headers):
@@ -65,18 +65,18 @@ def write_results(file, results):
 ############################################
 # Initialize Logger
 ############################################
-log_file = f'logs/{ts}-{config_value}.txt'
+log_file = f'{ts}-{config_value}'
 logger = Logger()
-logger.log_time('Starting job')
+logger.log_time('Starting grid search job')
 logger.log_time(f'Outputs being written to {[validation_auc_outputs,train_auc_outputs]}')
-logger.write_to_file(log_file)
+logger.write_results(log_file)
 
 
 ############################################
 # Load Data
 ############################################
 df = pd.read_hdf(data_path, data_key)
-logger.log_time(f'Loaded data with shape {df.shape}').write_to_file(log_file)
+logger.log_time(f'Loaded data with shape {df.shape}').write_results(log_file)
 if debug:
     y, x = df[:10000]['target'], df[:10000].drop(columns=['target'])
 else:
@@ -92,7 +92,7 @@ logger.log_time(f'Using config: {config_value}')
 
 # iterate over cross-validation folds
 for fold, (train_index, validate_index) in enumerate(stratified_cv.split(x, y)):
-    logger.log_time(f'Starting fold {fold}').write_to_file(log_file)
+    logger.log_time(f'Starting fold {fold}').write_results(log_file)
     # prepare input data
     x_train, y_train = x.iloc[train_index].values, y.iloc[train_index].values
     x_valid, y_valid = x.iloc[validate_index].values, y.iloc[validate_index].values
@@ -106,13 +106,12 @@ for fold, (train_index, validate_index) in enumerate(stratified_cv.split(x, y)):
     # create model and log it's description on 1st run
     dnn = create_model(input_dim, config)
     if fold == 0:
-        logger.log_time(f'Model summary')
-        logger.log_time(model_summary_to_string(dnn)).write_to_file(log_file)
+        logger.log_time(model_summary_to_string(dnn)).write_results()
 
     # train model
-    logger.log_time('Starting training...').write_to_file(log_file)
+    logger.log_time('Starting training...').write_results()
     history = dnn.fit(x_train, y_train, epochs=epochs, callbacks=callbacks, verbose=0)
-    logger.log_time('Trainin complete!').write_to_file(log_file)
+    logger.log_time('Trainin complete!').write_results()
 
     # write results
     prefix = f'{config_value},{fold}'
@@ -122,5 +121,5 @@ for fold, (train_index, validate_index) in enumerate(stratified_cv.split(x, y)):
     write_results(train_auc_outputs, f'{prefix},{",".join(train_aucs)}')
 
 
-logger.log_time('Job complete...').write_to_file(log_file)
+logger.log_time('Job complete...').write_results()
 
