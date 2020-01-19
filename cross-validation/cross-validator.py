@@ -76,7 +76,7 @@ logger.write_to_file()
 # Load Data
 ############################################
 df = pd.read_hdf(data_path, data_key)
-logger.log_time(f'Loaded data with shape {df.shape}').write_to_file())
+logger.log_time(f'Loaded data with shape {df.shape}').write_to_file()
 if debug:
     y, x = df[:10000]['target'], df[:10000].drop(columns=['target'])
 else:
@@ -92,7 +92,7 @@ logger.log_time(f'Using config: {config_value}')
 
 # iterate over cross-validation folds
 for fold, (train_index, validate_index) in enumerate(stratified_cv.split(x, y)):
-    logger.log_time(f'Starting fold {fold}').write_to_file())
+    logger.log_time(f'Starting fold {fold}').write_to_file()
     # prepare input data
     x_train, y_train = x.iloc[train_index].values, y.iloc[train_index].values
     x_valid, y_valid = x.iloc[validate_index].values, y.iloc[validate_index].values
@@ -106,12 +106,12 @@ for fold, (train_index, validate_index) in enumerate(stratified_cv.split(x, y)):
     # create model and log it's description on 1st run
     dnn = create_model(input_dim, config)
     if fold == 0:
-        logger.log_time(model_summary_to_string(dnn)).write_results()
+        logger.log_time(model_summary_to_string(dnn)).write_to_file()
 
     # train model
-    logger.log_time('Starting training...').write_results()
+    logger.log_time('Starting training...').write_to_file()
     history = dnn.fit(x_train, y_train, epochs=epochs, callbacks=callbacks, verbose=0)
-    logger.log_time('Trainin complete!').write_results()
+    logger.log_time('Trainin complete!').write_to_file()
 
     # write results
     prefix = f'{config_value},{fold}'
@@ -121,5 +121,5 @@ for fold, (train_index, validate_index) in enumerate(stratified_cv.split(x, y)):
     write_results(train_auc_outputs, f'{prefix},{",".join(train_aucs)}')
 
 
-logger.log_time('Job complete...').write_results()
+logger.log_time('Job complete...').write_to_file()
 
