@@ -51,7 +51,7 @@ config_value = f'layers:{hidden_layers_markup}-learn_rate:{config.get("learn_rat
 config_value += f'-batch_size:{config.get("batch_size")}-dropout_rate:{config.get("dropout_rate")}-bathcnorm:{config.get("batchnorm")}'
 
 if not os.path.isfile(train_auc_outputs):
-    results_header = 'config,' + ','.join([f'ep_{i}' for i in range(epochs) if i%callback_freq == 0])
+    results_header = 'config,fold,' + ','.join([f'ep_{i}' for i in range(epochs) if i%callback_freq == 0])
     output_files = [train_auc_outputs, validation_auc_outputs]
     output_headers = [results_header,results_header]
     for file, header in zip(output_files, output_headers):
