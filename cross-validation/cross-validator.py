@@ -8,12 +8,9 @@ sys.path.append(os.environ['CMS_ROOT'])
 from cms_modules.utils import model_summary_to_string, args_to_dict
 from cms_modules.logging import Logger
 
-ecbdl14_root = '~/git/ECBDL14-Classification/'
+ecbdl14_root = '/home/jjohn273/git/ECBDL14-Classification/'
 sys.path.append(ecbdl14_root)
 from model import create_model, KerasAucCallback
-
-
-#### Parse CLI Args
 
 cli_args = args_to_dict(sys.argv)
 hidden_layers = cli_args.get('hidden_layers')

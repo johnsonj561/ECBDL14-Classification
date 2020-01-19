@@ -1,12 +1,13 @@
 #!/bin/bash
 
-#SBATCH -J ecbdl14_cv_1
+#SBATCH -J ecbdl14_cv_kk1
 #SBATCH -A jjohn273
 #SBATCH -e errors.%j.txt
 #SBATCH -o output.%j.txt
-#SBATCH -p shortq7
-#SBATCH --gres=gpu:1 -n1 -N1-1
+#SBATCH -p longq-bigdata7
 #SBATCH --mail-user=jjohn273@fau.edu
 #SBATCH --mail-type=ALL
 
-srun --gres=gpu:1 -n1 python cross-validator.py
+source ../../env/bin/activate
+
+srun python ../cross-validator.py
