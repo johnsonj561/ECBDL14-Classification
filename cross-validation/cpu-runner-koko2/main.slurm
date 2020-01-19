@@ -1,6 +1,6 @@
 #!/bin/bash
 
-#SBATCH -J ecbdl14_cv_1
+#SBATCH -J ecbdl14_cv_kk2
 #SBATCH -A jjohn273
 #SBATCH -e errors.%j.txt
 #SBATCH -o output.%j.txt
@@ -10,4 +10,12 @@
 
 source ../../env/bin/activate
 
-srun python ../cross-validator.py
+srun python ../cross-validator.py \
+  debug=true \
+  epochs=5 \
+  hidden_layers=32|32 \
+  learn_rate=0.001 \
+  batch_size=128 \
+  dropout_rate=0.5 \
+  batchnorm=true \
+ 
