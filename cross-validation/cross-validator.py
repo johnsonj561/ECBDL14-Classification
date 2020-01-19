@@ -66,17 +66,17 @@ def write_results(file, results):
 # Initialize Logger
 ############################################
 log_file = f'{ts}-{config_value}'
-logger = Logger()
+logger = Logger(log_file)
 logger.log_time('Starting grid search job')
 logger.log_time(f'Outputs being written to {[validation_auc_outputs,train_auc_outputs]}')
-logger.write_results(log_file)
+logger.write_to_file()
 
 
 ############################################
 # Load Data
 ############################################
 df = pd.read_hdf(data_path, data_key)
-logger.log_time(f'Loaded data with shape {df.shape}').write_results(log_file)
+logger.log_time(f'Loaded data with shape {df.shape}').write_to_file())
 if debug:
     y, x = df[:10000]['target'], df[:10000].drop(columns=['target'])
 else:
@@ -92,7 +92,7 @@ logger.log_time(f'Using config: {config_value}')
 
 # iterate over cross-validation folds
 for fold, (train_index, validate_index) in enumerate(stratified_cv.split(x, y)):
-    logger.log_time(f'Starting fold {fold}').write_results(log_file)
+    logger.log_time(f'Starting fold {fold}').write_to_file())
     # prepare input data
     x_train, y_train = x.iloc[train_index].values, y.iloc[train_index].values
     x_valid, y_valid = x.iloc[validate_index].values, y.iloc[validate_index].values
