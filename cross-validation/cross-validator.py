@@ -17,7 +17,7 @@ from cms_modules.logging import Logger
 # In[ ]:
 
 
-ecbdl14_root = '~/git/ECBDL14-Classification/'
+ecbdl14_root = '/home/jjohn273/git/ECBDL14-Classification/'
 sys.path.append(ecbdl14_root)
 from model import create_model, KerasAucCallback
 
@@ -25,7 +25,7 @@ from model import create_model, KerasAucCallback
 # In[31]:
 
 
-debug = True
+debug = False
 
 
 # ### Define I/O Paths
@@ -154,9 +154,11 @@ for config_idx, config in enumerate(param_grid_options):
         train_auc_callback = KerasAucCallback(score_frequency, x_train, y_train)
         callbacks = [validation_auc_callback, train_auc_callback]
         
-        # create model and log it's description on 1st run
+        # create model
         dnn = create_model(input_dim, config)
+        # log stats if first fold
         if fold == 0:
+            logger.log_message(f'Training fold shape {x_train.shape}\nValidation fold shape {x_valid.shape}')
             logger.log_message(f'Model summary for configuration: {config_str}')
             logger.log_message(model_summary_to_string(dnn))
         
