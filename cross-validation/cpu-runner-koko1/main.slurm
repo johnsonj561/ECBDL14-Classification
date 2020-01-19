@@ -10,4 +10,11 @@
 
 source ../../env/bin/activate
 
-srun python ../cross-validator.py
+srun python ../cross-validator.py \
+  debug=true \
+  hidden_layers=32|32 \
+  learn_rate=0.001 \
+  batch_size=128 \
+  dropout_rate=0.5 \
+  batchnorm=true \
+ 
