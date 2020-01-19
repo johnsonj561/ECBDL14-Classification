@@ -15,17 +15,17 @@ def create_model(input_dim, config):
     optimizer = config.get('optimizer', Adam)
 
     model = Sequential()
-    
+
     for idx, width in enumerate(hidden_layers):
         input_dim = input_dim if idx == 0 else None
-        
+
         # hidden layers
         model.add(Dense(width, input_dim=input_dim))
         if batchnorm:
             model.add(BatchNormalization())
         model.add(Activation(activation))
         if dropout_rate != None:
-            model.add(Dropout(dropout_rate)) 
+            model.add(Dropout(dropout_rate))
 
     # output layer
     model.add(Dense(1, activation='sigmoid'))
@@ -37,21 +37,23 @@ def create_model(input_dim, config):
 
 class KerasAucCallback(Keras.callbacks.Callback):
     def __init__(self, frequency, x, y):
+        print(f'Initializing AUC Callback')
         self.frequency = frequency
         self.x = x
         self.y = y
         self.auc_scores = []
         self.epochs = []
-        
 
     def on_epoch_end(self, epoch, logs, generator=None):
         if epoch % self.frequency == 0:
             probs = self.model.predict(self.x)
-            self.auc_scores.append(roc_auc_score(self.y, probs))
+            auc = roc_auc_score(self.y, probs)
+            self.auc_scores.append(auc)
             self.epochs.append(f'ep{epoch}')
+            print('Epoch: {epoch}\tAUC: {auc}')
 
     def get_epochs(self):
         return self.epochs
-    
+
     def get_aucs(self):
         return self.auc_scores
