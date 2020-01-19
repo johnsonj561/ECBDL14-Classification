@@ -12,6 +12,9 @@ ecbdl14_root = '/home/jjohn273/git/ECBDL14-Classification/'
 sys.path.append(ecbdl14_root)
 from model import create_model, KerasAucCallback
 
+############################################
+# Parse CLI Args & Create DNN Config
+############################################
 config = {}
 cli_args = args_to_dict(sys.argv)
 hidden_layers_markup = cli_args.get('hidden_layers')
@@ -25,29 +28,25 @@ config['batchnorm'] = True if batchnorm.lower() == 'true' else False
 epochs = int(cli_args.get('epochs', 10))
 debug = cli_args.get('debug', 'false')
 debug = True if debug.lower() == 'true' else False
-callback_freq = 2
-
-print('markup', hidden_layers_markup)
+callback_freq = 1
 
 
-#### Define I/O Paths
-
+############################################
+# Define I/O Paths
+############################################
 # inputs
 data_path = os.path.join(ecbdl14_root, 'data/ecbdl14.onehot.sample.hdf')
 data_key = 'train'
-
 # outputs
 now = datetime.datetime.today()
 ts = now.strftime("%m%d%y-%H%M%S")
 validation_auc_outputs = f'{ts}-validation-auc-results.csv'
 train_auc_outputs = f'{ts}-train-auc-results.csv'
 
-logger = Logger()
-logger.log_time('Starting grid search job')
-logger.log_message(f'Outputs being written to {[validation_auc_outputs,train_auc_outputs]}')
 
-
-#### Initialize Output File Headers 
+############################################
+# Initialize Output Files
+############################################
 config_value = f'layers:{hidden_layers_markup}-learn_rate:{config.get("learn_rate")}'
 config_value += f'-batch_size:{config.get("batch_size")}-dropout_rate:{config.get("dropout_rate")}-bathcnorm:{config.get("batchnorm")}'
 
@@ -63,35 +62,37 @@ def write_results(file, results):
     with open(file, 'a') as fout:
         fout.write(results + '\n')
 
+############################################
+# Initialize Logger
+############################################
+log_file = f'{ts}-{config_value}'
+logger = Logger()
+logger.log_time('Starting grid search job')
+logger.log_time(f'Outputs being written to {[validation_auc_outputs,train_auc_outputs]}')
+logger.write_results(log_file)
 
-#### Load Data
 
+############################################
+# Load Data
+############################################
 df = pd.read_hdf(data_path, data_key)
-logger.log_time(f'Loaded data with shape {df.shape}')
-
-
-#### Take Subset of Data In Debug
-
+logger.log_time(f'Loaded data with shape {df.shape}').write_results(log_file)
 if debug:
     y, x = df[:10000]['target'], df[:10000].drop(columns=['target'])
 else:
     y, x = df['target'], df.drop(columns=['target'])
 
 
-#### Define Grid Search and Model Params
-# Due to known issues with GridSearch and Keras callbacks, we enumerate grid options and manually iterate over each configuration.
-
+############################################
+# Iterate Over K-Fold Validation
+############################################
 stratified_cv = StratifiedKFold(n_splits=3, shuffle=True)
-
-# ### Run Cross-Validation
-
 logger.log_time('Starting cross-validation')
-
-logger.log_message(f'Using config: {config_value}')
+logger.log_time(f'Using config: {config_value}')
 
 # iterate over cross-validation folds
 for fold, (train_index, validate_index) in enumerate(stratified_cv.split(x, y)):
-    logger.log_time(f'Starting fold {fold}')
+    logger.log_time(f'Starting fold {fold}').write_results(log_file)
     # prepare input data
     x_train, y_train = x.iloc[train_index].values, y.iloc[train_index].values
     x_valid, y_valid = x.iloc[validate_index].values, y.iloc[validate_index].values
@@ -105,13 +106,13 @@ for fold, (train_index, validate_index) in enumerate(stratified_cv.split(x, y)):
     # create model and log it's description on 1st run
     dnn = create_model(input_dim, config)
     if fold == 0:
-        logger.log_message(f'Model summary')
-        logger.log_message(model_summary_to_string(dnn))
+        logger.log_time(f'Model summary')
+        logger.log_time(model_summary_to_string(dnn)).write_results()
 
     # train model
-    logger.log_time('Starting training...')
+    logger.log_time('Starting training...').write_results()
     history = dnn.fit(x_train, y_train, epochs=epochs, callbacks=callbacks, verbose=0)
-    logger.log_time('Trainin complete!')
+    logger.log_time('Trainin complete!').write_results()
 
     # write results
     prefix = f'{config_value},{fold}'
@@ -121,5 +122,5 @@ for fold, (train_index, validate_index) in enumerate(stratified_cv.split(x, y)):
     write_results(train_auc_outputs, f'{prefix},{",".join(train_aucs)}')
 
 
-logger.log_time('Job complete...')
+logger.log_time('Job complete...').write_results()
 
