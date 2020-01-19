@@ -13,7 +13,7 @@ source ../../env/bin/activate
 
 srun -n 1 python ../cross-validator.py \
   debug=false \
-  epochs=2 \
+  epochs=5 \
   hidden_layers=32+32 \
   learn_rate=0.001 \
   batch_size=128 \
@@ -22,7 +22,7 @@ srun -n 1 python ../cross-validator.py \
 
 srun -n 1 python ../cross-validator.py \
   debug=false \
-  epochs=2 \
+  epochs=5 \
   hidden_layers=64+64 \
   learn_rate=0.001 \
   batch_size=128 \
@@ -31,7 +31,7 @@ srun -n 1 python ../cross-validator.py \
 
 srun -n 1 python ../cross-validator.py \
   debug=false \
-  epochs=2 \
+  epochs=5 \
   hidden_layers=128+64+32 \
   learn_rate=0.001 \
   batch_size=128 \

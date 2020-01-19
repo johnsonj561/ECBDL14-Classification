@@ -1,0 +1,35 @@
+0 min, 0 sec: Starting grid search job
+0 min, 0 sec: Outputs being written to ['011920-142926-validation-auc-results.csv', '011920-142926-train-auc-results.csv']
+0 min, 6 sec: Loaded data with shape (2800000, 201)
+0 min, 10 sec: Starting cross-validation
+0 min, 10 sec: Using config: layers:64+64-learn_rate:0.001-batch_size:128-dropout_rate:0.5-bathcnorm:True
+0 min, 12 sec: Starting fold 0
+0 min, 17 sec: Model Summary:
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+dense (Dense)                (None, 64)                12864     
+_________________________________________________________________
+batch_normalization (BatchNo (None, 64)                256       
+_________________________________________________________________
+activation (Activation)      (None, 64)                0         
+_________________________________________________________________
+dropout (Dropout)            (None, 64)                0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 64)                4160      
+_________________________________________________________________
+batch_normalization_1 (Batch (None, 64)                256       
+_________________________________________________________________
+activation_1 (Activation)    (None, 64)                0         
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 64)                0         
+_________________________________________________________________
+dense_2 (Dense)              (None, 1)                 65        
+=================================================================
+Total params: 17,601
+Trainable params: 17,345
+Non-trainable params: 256
+_________________________________________________________________
+
+0 min, 17 sec: Starting training...
