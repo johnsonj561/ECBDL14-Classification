@@ -15,7 +15,7 @@ from model import create_model, KerasAucCallback
 config = {}
 cli_args = args_to_dict(sys.argv)
 hidden_layers_markup = cli_args.get('hidden_layers')
-config['hidden_layers'] = [int(nodes) for nodes in hidden_layers_markup.split('|')]
+config['hidden_layers'] = [int(nodes) for nodes in hidden_layers_markup.split('+')]
 config['learn_rate'] = float(cli_args.get('learn_rate', 1e-3))
 config['batch_size'] = int(cli_args.get('batch_size', 128))
 dropout_rate = cli_args.get('dropout_rate')
@@ -25,7 +25,9 @@ config['batchnorm'] = True if batchnorm.lower() == 'true' else False
 epochs = int(cli_args.get('epochs', 10))
 debug = cli_args.get('debug', 'false')
 debug = True if debug.lower() == 'true' else False
-callback_freq = 5
+callback_freq = 2
+
+print('markup', hidden_layers_markup)
 
 
 #### Define I/O Paths
@@ -50,7 +52,7 @@ config_value = f'layers:{hidden_layers_markup}-learn_rate:{config.get("learn_rat
 config_value += f'-batch_size:{config.get("batch_size")}-dropout_rate:{config.get("dropout_rate")}-bathcnorm:{config.get("batchnorm")}'
 
 if not os.path.isfile(train_auc_outputs):
-    results_header = 'config,fold,' + ','.join([f'ep_{i}' for i in range(epochs) if i%callback_freq == 0])
+    results_header = 'config,' + ','.join([f'ep_{i}' for i in range(epochs) if i%callback_freq == 0])
     output_files = [train_auc_outputs, validation_auc_outputs]
     output_headers = [results_header,results_header]
     for file, header in zip(output_files, output_headers):
