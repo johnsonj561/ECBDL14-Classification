@@ -7,12 +7,15 @@ from sklearn.model_selection import StratifiedKFold, ParameterGrid
 sys.path.append(os.environ['CMS_ROOT'])
 from cms_modules.utils import model_summary_to_string, args_to_dict
 from cms_modules.logging import Logger
+
 import tensorflow as tf
 EarlyStopping = tf.keras.callbacks.EarlyStopping
+TensorBoard = tf.keras.callbacks.TensorBoard
 
 ecbdl14_root = '/home/jjohn273/git/ECBDL14-Classification/'
 sys.path.append(ecbdl14_root)
-from model import create_model, KerasRocAucCallback
+from model import create_model
+from CustomCallbacks import KerasRocAucCallback
 
 ############################################
 # Parse CLI Args & Create DNN Config
@@ -30,7 +33,6 @@ config['batchnorm'] = True if batchnorm.lower() == 'true' else False
 epochs = int(cli_args.get('epochs', 10))
 debug = cli_args.get('debug', 'false')
 debug = True if debug.lower() == 'true' else False
-callback_freq = 1
 
 
 ############################################
@@ -67,6 +69,7 @@ def write_results(file, results):
 ############################################
 # Initialize Logger
 ############################################
+tensorboard_dir = f'tensorboard'
 log_file = f'logs/{ts}-{config_value}.txt'
 logger = Logger(log_file)
 logger.log_time('Starting grid search job')
@@ -101,11 +104,13 @@ for fold, (train_index, validate_index) in enumerate(stratified_cv.split(x, y)):
     input_dim = x_train.shape[1]
 
     # setup callbacks for monitoring AUC and early stopping
-    validation_auc_callback = KerasRocAucCallback(callback_freq, x_valid, y_valid, True, logger)
-    train_auc_callback = KerasRocAucCallback(callback_freq, x_train, y_train)
-    early_stopping = EarlyStopping(monitor='val_auc', patience=5)  
-    callbacks = [validation_auc_callback, train_auc_callback, early_stopping]
-    
+    validation_auc_callback = KerasRocAucCallback(x_valid, y_valid, True, logger)
+    train_auc_callback = KerasRocAucCallback(x_train, y_train)
+    early_stopping = EarlyStopping(monitor='val_auc', min_delta=0.01, patience=10, mode='max')
+    tensorboard = TensorBoard(log_dir=f'{tensorboard_dir}/{config_value}/fold-{fold}', write_graph=False)
+
+    callbacks = [validation_auc_callback, train_auc_callback, early_stopping, tensorboard]
+
     # create model and log it's description on 1st run
     dnn = create_model(input_dim, config)
     if fold == 0:
@@ -118,9 +123,9 @@ for fold, (train_index, validate_index) in enumerate(stratified_cv.split(x, y)):
 
     # write results
     prefix = f'{config_value},{fold}'
-    validation_aucs = np.array(validation_auc_callback.get_aucs(), dtype=str)
+    validation_aucs = np.array(history.history['val_auc'], dtype=str)
     write_results(validation_auc_outputs, f'{prefix},{",".join(validation_aucs)}')
-    train_aucs = np.array(train_auc_callback.get_aucs(), dtype=str)
+    train_aucs = np.array(history.history['train_auc'], dtype=str)
     write_results(train_auc_outputs, f'{prefix},{",".join(train_aucs)}')
 
 
