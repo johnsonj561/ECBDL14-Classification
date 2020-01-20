@@ -37,7 +37,6 @@ def create_model(input_dim, config):
 
 class KerasAucCallback(Keras.callbacks.Callback):
     def __init__(self, frequency, x, y, logger=None):
-        print(f'Initializing AUC Callback')
         self.frequency = frequency
         self.x = x
         self.y = y
