@@ -18,4 +18,24 @@ python ../cross-validator.py \
   learn_rate=0.001 \
   batch_size=128 \
   dropout_rate=0.5 \
-  batchnorm=true
+  batchnorm=true &
+
+python ../cross-validator.py \
+  debug=true \
+  epochs=50 \
+  hidden_layers=64+64 \
+  learn_rate=0.001 \
+  batch_size=128 \
+  dropout_rate=0.5 \
+  batchnorm=true &
+
+python ../cross-validator.py \
+  debug=true \
+  epochs=50 \
+  hidden_layers=128+128 \
+  learn_rate=0.001 \
+  batch_size=128 \
+  dropout_rate=0.5 \
+  batchnorm=true &
+
+wait

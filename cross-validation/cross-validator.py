@@ -55,7 +55,7 @@ config_value = f'layers:{hidden_layers_markup}-learn_rate:{config.get("learn_rat
 config_value += f'-batch_size:{config.get("batch_size")}-dropout_rate:{config.get("dropout_rate")}-bathcnorm:{config.get("batchnorm")}'
 
 if not os.path.isfile(train_auc_outputs):
-    results_header = 'config,fold,' + ','.join([f'ep_{i}' for i in range(epochs) if i%callback_freq == 0])
+    results_header = 'config,fold,' + ','.join([f'ep_{i}' for i in range(epochs)])
     output_files = [train_auc_outputs, validation_auc_outputs]
     output_headers = [results_header,results_header]
     for file, header in zip(output_files, output_headers):
@@ -69,7 +69,7 @@ def write_results(file, results):
 ############################################
 # Initialize Logger
 ############################################
-tensorboard_dir = f'tensorboard'
+tensorboard_dir = f'tensorboard/{ts}-{config_value}/'
 log_file = f'logs/{ts}-{config_value}.txt'
 logger = Logger(log_file)
 logger.log_time('Starting grid search job')
@@ -107,7 +107,7 @@ for fold, (train_index, validate_index) in enumerate(stratified_cv.split(x, y)):
     validation_auc_callback = KerasRocAucCallback(x_valid, y_valid, True, logger)
     train_auc_callback = KerasRocAucCallback(x_train, y_train)
     early_stopping = EarlyStopping(monitor='val_auc', min_delta=0.01, patience=10, mode='max')
-    tensorboard = TensorBoard(log_dir=f'{tensorboard_dir}/{config_value}/fold-{fold}', write_graph=False)
+    tensorboard = TensorBoard(log_dir=f'{tensorboard_dir}/fold-{fold}', write_graph=False)
 
     callbacks = [validation_auc_callback, train_auc_callback, early_stopping, tensorboard]
 
