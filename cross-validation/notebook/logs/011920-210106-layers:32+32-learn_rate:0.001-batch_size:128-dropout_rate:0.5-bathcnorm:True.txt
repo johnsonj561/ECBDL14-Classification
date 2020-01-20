@@ -1,0 +1,43 @@
+0 min, 0 sec: Starting grid search job
+0 min, 0 sec: Outputs being written to ['011920-210106-validation-auc-results.csv', '011920-210106-train-auc-results.csv']
+0 min, 2 sec: Loaded data with shape (2800000, 201)
+0 min, 3 sec: Starting cross-validation
+0 min, 3 sec: Using config: layers:32+32-learn_rate:0.001-batch_size:128-dropout_rate:0.5-bathcnorm:True
+0 min, 3 sec: Starting fold 0
+0 min, 3 sec: Model Summary:
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+dense_1 (Dense)              (None, 32)                6432      
+_________________________________________________________________
+batch_normalization_1 (Batch (None, 32)                128       
+_________________________________________________________________
+activation_1 (Activation)    (None, 32)                0         
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 32)                0         
+_________________________________________________________________
+dense_2 (Dense)              (None, 32)                1056      
+_________________________________________________________________
+batch_normalization_2 (Batch (None, 32)                128       
+_________________________________________________________________
+activation_2 (Activation)    (None, 32)                0         
+_________________________________________________________________
+dropout_2 (Dropout)          (None, 32)                0         
+_________________________________________________________________
+dense_3 (Dense)              (None, 1)                 33        
+=================================================================
+Total params: 7,777
+Trainable params: 7,649
+Non-trainable params: 128
+_________________________________________________________________
+
+0 min, 3 sec: Starting training...
+0 min, 4 sec: Epoch: 0  AUC: 0.5595135051157423
+0 min, 5 sec: Epoch: 1  AUC: 0.6087755509687729
+0 min, 5 sec: Epoch: 2  AUC: 0.6652196107153162
+0 min, 6 sec: Epoch: 3  AUC: 0.652125086002175
+0 min, 7 sec: Epoch: 4  AUC: 0.6664580420356437
+0 min, 8 sec: Epoch: 5  AUC: 0.6792063386377254
+0 min, 8 sec: Epoch: 6  AUC: 0.6912399849080053
+0 min, 8 sec: Trainin complete!
+0 min, 8 sec: Job complete...

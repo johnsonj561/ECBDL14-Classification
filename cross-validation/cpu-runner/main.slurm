@@ -11,31 +11,11 @@
 
 source ../../env/bin/activate
 
-srun -n 1 python ../cross-validator.py \
-  debug=false \
-  epochs=5 \
+python ../cross-validator.py \
+  debug=true \
+  epochs=50 \
   hidden_layers=32+32 \
   learn_rate=0.001 \
   batch_size=128 \
   dropout_rate=0.5 \
-  batchnorm=true &
-
-srun -n 1 python ../cross-validator.py \
-  debug=false \
-  epochs=5 \
-  hidden_layers=64+64 \
-  learn_rate=0.001 \
-  batch_size=128 \
-  dropout_rate=0.5 \
-  batchnorm=true &
-
-srun -n 1 python ../cross-validator.py \
-  debug=false \
-  epochs=5 \
-  hidden_layers=128+64+32 \
-  learn_rate=0.001 \
-  batch_size=128 \
-  dropout_rate=0.5 \
-  batchnorm=true &
-
-wait
+  batchnorm=true

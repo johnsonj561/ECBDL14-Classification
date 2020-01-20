@@ -1,10 +1,10 @@
 0 min, 0 sec: Starting grid search job
-0 min, 0 sec: Outputs being written to ['011920-143657-validation-auc-results.csv', '011920-143657-train-auc-results.csv']
+0 min, 0 sec: Outputs being written to ['011920-215419-validation-auc-results.csv', '011920-215419-train-auc-results.csv']
 0 min, 6 sec: Loaded data with shape (2800000, 201)
 0 min, 11 sec: Starting cross-validation
 0 min, 11 sec: Using config: layers:32+32-learn_rate:0.001-batch_size:128-dropout_rate:0.5-bathcnorm:True
-0 min, 12 sec: Starting fold 0
-0 min, 23 sec: Model Summary:
+0 min, 11 sec: Starting fold 0
+0 min, 11 sec: Model Summary:
 Model: "sequential"
 _________________________________________________________________
 Layer (type)                 Output Shape              Param #   
@@ -32,27 +32,30 @@ Trainable params: 7,649
 Non-trainable params: 128
 _________________________________________________________________
 
-0 min, 23 sec: Starting training...
-8 min, 6 sec: Epoch: 0	AUC: 0.7938264882469439
-15 min, 54 sec: Epoch: 1	AUC: 0.8015688421331535
-23 min, 44 sec: Epoch: 2	AUC: 0.8048386798155028
-31 min, 30 sec: Epoch: 3	AUC: 0.8053399731861656
-39 min, 17 sec: Epoch: 4	AUC: 0.8077831932339501
-39 min, 17 sec: Trainin complete!
-39 min, 17 sec: Starting fold 1
-39 min, 27 sec: Starting training...
-47 min, 32 sec: Epoch: 0	AUC: 0.7957849154879926
-55 min, 23 sec: Epoch: 1	AUC: 0.8003797352997349
-63 min, 14 sec: Epoch: 2	AUC: 0.802654192181599
-71 min, 8 sec: Epoch: 3	AUC: 0.8066508165630671
-78 min, 59 sec: Epoch: 4	AUC: 0.8077903645702252
-78 min, 59 sec: Trainin complete!
-78 min, 60 sec: Starting fold 2
-79 min, 11 sec: Starting training...
-87 min, 20 sec: Epoch: 0	AUC: 0.7943670331801509
-95 min, 31 sec: Epoch: 1	AUC: 0.8029923325136548
-103 min, 40 sec: Epoch: 2	AUC: 0.8044599089584961
-111 min, 48 sec: Epoch: 3	AUC: 0.8068257114974978
-119 min, 59 sec: Epoch: 4	AUC: 0.8073845560840496
-119 min, 59 sec: Trainin complete!
-119 min, 59 sec: Job complete...
+0 min, 11 sec: Starting training...
+0 min, 13 sec: Epoch: 0  AUC: 0.5316421421754667
+0 min, 14 sec: Epoch: 1  AUC: 0.5427258805513017
+0 min, 14 sec: Epoch: 2  AUC: 0.5978427325387842
+0 min, 15 sec: Epoch: 3  AUC: 0.634383114721353
+0 min, 16 sec: Epoch: 4  AUC: 0.6415917615464856
+0 min, 17 sec: Epoch: 5  AUC: 0.6832989324633243
+0 min, 17 sec: Trainin complete!
+0 min, 17 sec: Starting fold 1
+0 min, 18 sec: Starting training...
+0 min, 19 sec: Epoch: 0  AUC: 0.5539365822898837
+0 min, 20 sec: Epoch: 1  AUC: 0.6041752995225654
+0 min, 21 sec: Epoch: 2  AUC: 0.6136564273488876
+0 min, 22 sec: Epoch: 3  AUC: 0.6085712998828934
+0 min, 23 sec: Epoch: 4  AUC: 0.6195027475002252
+0 min, 24 sec: Epoch: 5  AUC: 0.6504278893793352
+0 min, 24 sec: Trainin complete!
+0 min, 24 sec: Starting fold 2
+0 min, 24 sec: Starting training...
+0 min, 26 sec: Epoch: 0  AUC: 0.631997117376813
+0 min, 27 sec: Epoch: 1  AUC: 0.6238401945770652
+0 min, 28 sec: Epoch: 2  AUC: 0.643698765876948
+0 min, 28 sec: Epoch: 3  AUC: 0.6635888658679399
+0 min, 29 sec: Epoch: 4  AUC: 0.6730024322133141
+0 min, 30 sec: Epoch: 5  AUC: 0.6961940365732817
+0 min, 30 sec: Trainin complete!
+0 min, 30 sec: Job complete...

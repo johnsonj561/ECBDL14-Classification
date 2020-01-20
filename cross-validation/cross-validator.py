@@ -7,6 +7,8 @@ from sklearn.model_selection import StratifiedKFold, ParameterGrid
 sys.path.append(os.environ['CMS_ROOT'])
 from cms_modules.utils import model_summary_to_string, args_to_dict
 from cms_modules.logging import Logger
+import tensorflow as tf
+EarlyStopping = tf.keras.callbacks.EarlyStopping
 
 ecbdl14_root = '/home/jjohn273/git/ECBDL14-Classification/'
 sys.path.append(ecbdl14_root)
@@ -101,8 +103,9 @@ for fold, (train_index, validate_index) in enumerate(stratified_cv.split(x, y)):
     # setup callbacks for monitoring AUC and early stopping
     validation_auc_callback = KerasRocAucCallback(callback_freq, x_valid, y_valid, True, logger)
     train_auc_callback = KerasRocAucCallback(callback_freq, x_train, y_train)
-    callbacks = [validation_auc_callback, train_auc_callback]
-
+    early_stopping = EarlyStopping(monitor='val_auc', patience=5)  
+    callbacks = [validation_auc_callback, train_auc_callback, early_stopping]
+    
     # create model and log it's description on 1st run
     dnn = create_model(input_dim, config)
     if fold == 0:
