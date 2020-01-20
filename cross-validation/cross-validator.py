@@ -10,7 +10,7 @@ from cms_modules.logging import Logger
 
 ecbdl14_root = '/home/jjohn273/git/ECBDL14-Classification/'
 sys.path.append(ecbdl14_root)
-from model import create_model, KerasAucCallback
+from model import create_model, KerasRocAucCallback
 
 ############################################
 # Parse CLI Args & Create DNN Config
@@ -98,9 +98,9 @@ for fold, (train_index, validate_index) in enumerate(stratified_cv.split(x, y)):
     x_valid, y_valid = x.iloc[validate_index].values, y.iloc[validate_index].values
     input_dim = x_train.shape[1]
 
-    # setup callbacks to monitor auc
-    validation_auc_callback = KerasAucCallback(callback_freq, x_valid, y_valid)
-    train_auc_callback = KerasAucCallback(callback_freq, x_train, y_train, logger)
+    # setup callbacks for monitoring AUC and early stopping
+    validation_auc_callback = KerasRocAucCallback(callback_freq, x_valid, y_valid, True, logger)
+    train_auc_callback = KerasRocAucCallback(callback_freq, x_train, y_train)
     callbacks = [validation_auc_callback, train_auc_callback]
 
     # create model and log it's description on 1st run

@@ -35,13 +35,14 @@ def create_model(input_dim, config):
 
 
 
-class KerasAucCallback(Keras.callbacks.Callback):
-    def __init__(self, frequency, x, y, logger=None):
+class KerasRocAucCallback(Keras.callbacks.Callback):
+    def __init__(self, frequency, x, y, withEarlyStop=False, logger=None):
         self.frequency = frequency
         self.x = x
         self.y = y
         self.auc_scores = []
         self.epochs = []
+        self.withEarlyStop = withEarlyStop
         self.logger = logger
 
     def on_epoch_end(self, epoch, logs, generator=None):
@@ -52,9 +53,18 @@ class KerasAucCallback(Keras.callbacks.Callback):
             self.epochs.append(f'ep{epoch}')
             if self.logger != None:
                 self.logger.log_time(f'Epoch: {epoch}\tAUC: {auc}').write_to_file()
+            self.model.stop_training = should_stop(epoch)
 
-    def get_epochs(self):
-        return self.epochs
+    def should_stop(self, epoch):
+        if not self.withEarlyStop or epoch < 20:
+            return False
+        baseline_auc = self.auc_scores[-10]
+        min_delta = 0.002
+        for auc in self.auc_scores[-9:]:
+            if auc > (baseline_auc + min_delta):
+                return False
+        self.logger.log_time(f'Early stopping criteria met using a min_delta: {min_delta}')
+        return True
 
     def get_aucs(self):
         return self.auc_scores
