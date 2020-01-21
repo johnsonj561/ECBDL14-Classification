@@ -14,3 +14,6 @@
 2020-01-20 19:42:23.239790: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1346] function cupti_interface_->ActivityRegisterCallbacks( AllocCuptiActivityBuffer, FreeCuptiActivityBuffer)failed with error CUPTI could not be loaded or symbol could not be found.
 2020-01-20 19:42:23.254873: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1329] function cupti_interface_->EnableCallback( 0 , subscriber_, CUPTI_CB_DOMAIN_DRIVER_API, cbid)failed with error CUPTI could not be loaded or symbol could not be found.
 2020-01-20 19:42:23.254926: I tensorflow/core/profiler/internal/gpu/device_tracer.cc:88]  GpuTracer has collected 0 callback api events and 0 activity events.
+2020-01-20 19:44:48.858458: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 2986665600 exceeds 10% of system memory.
+2020-01-20 19:48:07.692430: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 2986665600 exceeds 10% of system memory.
+2020-01-20 19:51:18.875438: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 2986665600 exceeds 10% of system memory.
