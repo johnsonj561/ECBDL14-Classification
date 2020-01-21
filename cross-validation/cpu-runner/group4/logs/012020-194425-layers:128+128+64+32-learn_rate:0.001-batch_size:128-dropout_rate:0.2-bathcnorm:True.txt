@@ -1,0 +1,2 @@
+0 min, 0 sec: Starting grid search job
+0 min, 0 sec: Outputs being written to ['012020-194425-validation-auc-results.csv', '012020-194425-train-auc-results.csv']

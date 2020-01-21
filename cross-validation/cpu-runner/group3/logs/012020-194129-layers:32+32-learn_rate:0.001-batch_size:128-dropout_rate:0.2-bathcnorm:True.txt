@@ -1,0 +1,36 @@
+0 min, 0 sec: Starting grid search job
+0 min, 0 sec: Outputs being written to ['012020-194129-validation-auc-results.csv', '012020-194129-train-auc-results.csv']
+0 min, 39 sec: Loaded data with shape (2800000, 201)
+0 min, 43 sec: Starting cross-validation
+0 min, 43 sec: Using config: layers:32+32-learn_rate:0.001-batch_size:128-dropout_rate:0.2-bathcnorm:True
+0 min, 43 sec: Starting fold 0
+0 min, 47 sec: Model Summary:
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+dense (Dense)                (None, 32)                6432      
+_________________________________________________________________
+batch_normalization (BatchNo (None, 32)                128       
+_________________________________________________________________
+activation (Activation)      (None, 32)                0         
+_________________________________________________________________
+dropout (Dropout)            (None, 32)                0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 32)                1056      
+_________________________________________________________________
+batch_normalization_1 (Batch (None, 32)                128       
+_________________________________________________________________
+activation_1 (Activation)    (None, 32)                0         
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 32)                0         
+_________________________________________________________________
+dense_2 (Dense)              (None, 1)                 33        
+=================================================================
+Total params: 7,777
+Trainable params: 7,649
+Non-trainable params: 128
+_________________________________________________________________
+
+0 min, 47 sec: Starting training...
+3 min, 20 sec: Epoch: 0  val_auc: 0.7997934605331473

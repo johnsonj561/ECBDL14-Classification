@@ -1,7 +1,9 @@
+import sys
+print('Python version')
+print(sys.version)
 import pandas as pd
 import numpy as np
 import os
-import sys
 import datetime
 from sklearn.model_selection import StratifiedKFold, ParameterGrid
 sys.path.append(os.environ['CMS_ROOT'])
@@ -87,8 +89,8 @@ if debug:
 else:
     y, x = df['target'], df.drop(columns=['target'])
 
+del df
 
-############################################
 # Iterate Over K-Fold Validation
 ############################################
 stratified_cv = StratifiedKFold(n_splits=3, shuffle=True)
@@ -102,11 +104,12 @@ for fold, (train_index, validate_index) in enumerate(stratified_cv.split(x, y)):
     x_train, y_train = x.iloc[train_index].values, y.iloc[train_index].values
     x_valid, y_valid = x.iloc[validate_index].values, y.iloc[validate_index].values
     input_dim = x_train.shape[1]
+    del train_index, validate_index
 
     # setup callbacks for monitoring AUC and early stopping
     validation_auc_callback = KerasRocAucCallback(x_valid, y_valid, True, logger)
     train_auc_callback = KerasRocAucCallback(x_train, y_train)
-    early_stopping = EarlyStopping(monitor='val_auc', min_delta=0.01, patience=10, mode='max')
+    early_stopping = EarlyStopping(monitor='val_auc', min_delta=0.005, patience=10, mode='max')
     tensorboard = TensorBoard(log_dir=f'{tensorboard_dir}/fold-{fold}', write_graph=False)
 
     callbacks = [validation_auc_callback, train_auc_callback, early_stopping, tensorboard]
@@ -128,6 +131,10 @@ for fold, (train_index, validate_index) in enumerate(stratified_cv.split(x, y)):
     train_aucs = np.array(history.history['train_auc'], dtype=str)
     write_results(train_auc_outputs, f'{prefix},{",".join(train_aucs)}')
 
+    # free some memory
+    del history, x_valid, y_valid, x_train, y_train
+    del dnn
+    
 
 logger.log_time('Job complete...').write_to_file()
 

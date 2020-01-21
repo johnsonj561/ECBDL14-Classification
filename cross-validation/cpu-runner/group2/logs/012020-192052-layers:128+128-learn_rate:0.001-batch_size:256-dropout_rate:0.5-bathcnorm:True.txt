@@ -1,0 +1,41 @@
+0 min, 0 sec: Starting grid search job
+0 min, 0 sec: Outputs being written to ['012020-192052-validation-auc-results.csv', '012020-192052-train-auc-results.csv']
+0 min, 2 sec: Loaded data with shape (2800000, 201)
+0 min, 4 sec: Starting cross-validation
+0 min, 4 sec: Using config: layers:128+128-learn_rate:0.001-batch_size:256-dropout_rate:0.5-bathcnorm:True
+0 min, 4 sec: Starting fold 0
+0 min, 6 sec: Model Summary:
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+dense (Dense)                (None, 128)               25728     
+_________________________________________________________________
+batch_normalization (BatchNo (None, 128)               512       
+_________________________________________________________________
+activation (Activation)      (None, 128)               0         
+_________________________________________________________________
+dropout (Dropout)            (None, 128)               0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 128)               16512     
+_________________________________________________________________
+batch_normalization_1 (Batch (None, 128)               512       
+_________________________________________________________________
+activation_1 (Activation)    (None, 128)               0         
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 128)               0         
+_________________________________________________________________
+dense_2 (Dense)              (None, 1)                 129       
+=================================================================
+Total params: 43,393
+Trainable params: 42,881
+Non-trainable params: 512
+_________________________________________________________________
+
+0 min, 6 sec: Starting training...
+2 min, 59 sec: Epoch: 0  val_auc: 0.7992671477691926
+6 min, 48 sec: Epoch: 1  val_auc: 0.8058028132553684
+10 min, 34 sec: Epoch: 2  val_auc: 0.8083443834286654
+14 min, 21 sec: Epoch: 3  val_auc: 0.8095865803011704
+18 min, 5 sec: Epoch: 4  val_auc: 0.8112897391485365
+21 min, 56 sec: Epoch: 5  val_auc: 0.8126670926911901

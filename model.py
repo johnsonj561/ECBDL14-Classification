@@ -4,8 +4,10 @@ Sequential = Keras.models.Sequential
 Activation = Keras.layers.Activation
 Adam = Keras.optimizers.Adam
 Dense, Dropout, BatchNormalization = Keras.layers.Dense, Keras.layers.Dropout, Keras.layers.BatchNormalization
+K = Keras.backend
 
 def create_model(input_dim, config):
+    K.clear_session()
     learn_rate = config.get('learn_rate', 1e-3)
     dropout_rate = config.get('dropout_rate')
     batchnorm = config.get('batchnorm', False)
