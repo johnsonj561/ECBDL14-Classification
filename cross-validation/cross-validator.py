@@ -12,6 +12,7 @@ from cms_modules.logging import Logger
 
 import tensorflow as tf
 EarlyStopping = tf.keras.callbacks.EarlyStopping
+ReduceLROnPlateau = tf.keras.callbacks.ReduceLROnPlateau
 TensorBoard = tf.keras.callbacks.TensorBoard
 
 ecbdl14_root = '/home/jjohn273/git/ECBDL14-Classification/'
@@ -111,8 +112,9 @@ for fold, (train_index, validate_index) in enumerate(stratified_cv.split(x, y)):
     train_auc_callback = KerasRocAucCallback(x_train, y_train)
     early_stopping = EarlyStopping(monitor='val_auc', min_delta=0.005, patience=10, mode='max')
     tensorboard = TensorBoard(log_dir=f'{tensorboard_dir}/fold-{fold}', write_graph=False)
-
     callbacks = [validation_auc_callback, train_auc_callback, early_stopping, tensorboard]
+    if use_lr_reduction:
+        callbacks.append()
 
     # create model and log it's description on 1st run
     dnn = create_model(input_dim, config)
@@ -134,7 +136,7 @@ for fold, (train_index, validate_index) in enumerate(stratified_cv.split(x, y)):
     # free some memory
     del history, x_valid, y_valid, x_train, y_train
     del dnn
-    
+
 
 logger.log_time('Job complete...').write_to_file()
 
