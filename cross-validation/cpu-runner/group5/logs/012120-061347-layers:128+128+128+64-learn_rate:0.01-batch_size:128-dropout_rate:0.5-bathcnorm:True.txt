@@ -1,0 +1,64 @@
+0 min, 0 sec: Starting grid search job
+0 min, 0 sec: Outputs being written to ['012120-061347-validation-auc-results.csv', '012120-061347-train-auc-results.csv']
+0 min, 6 sec: Loaded data with shape (2800000, 201)
+0 min, 8 sec: Starting cross-validation
+0 min, 8 sec: Using config: layers:128+128+128+64-learn_rate:0.01-batch_size:128-dropout_rate:0.5-bathcnorm:True
+0 min, 8 sec: Starting fold 0
+0 min, 11 sec: Model Summary:
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+dense (Dense)                (None, 128)               25728     
+_________________________________________________________________
+batch_normalization (BatchNo (None, 128)               512       
+_________________________________________________________________
+activation (Activation)      (None, 128)               0         
+_________________________________________________________________
+dropout (Dropout)            (None, 128)               0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 128)               16512     
+_________________________________________________________________
+batch_normalization_1 (Batch (None, 128)               512       
+_________________________________________________________________
+activation_1 (Activation)    (None, 128)               0         
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 128)               0         
+_________________________________________________________________
+dense_2 (Dense)              (None, 128)               16512     
+_________________________________________________________________
+batch_normalization_2 (Batch (None, 128)               512       
+_________________________________________________________________
+activation_2 (Activation)    (None, 128)               0         
+_________________________________________________________________
+dropout_2 (Dropout)          (None, 128)               0         
+_________________________________________________________________
+dense_3 (Dense)              (None, 64)                8256      
+_________________________________________________________________
+batch_normalization_3 (Batch (None, 64)                256       
+_________________________________________________________________
+activation_3 (Activation)    (None, 64)                0         
+_________________________________________________________________
+dropout_3 (Dropout)          (None, 64)                0         
+_________________________________________________________________
+dense_4 (Dense)              (None, 1)                 65        
+=================================================================
+Total params: 68,865
+Trainable params: 67,969
+Non-trainable params: 896
+_________________________________________________________________
+
+0 min, 11 sec: Starting training...
+6 min, 31 sec: Epoch: 0  val_auc: 0.7952612039100418
+12 min, 42 sec: Epoch: 1  val_auc: 0.8011263744677342
+20 min, 6 sec: Epoch: 2  val_auc: 0.8013913916618876
+27 min, 16 sec: Epoch: 3  val_auc: 0.8041562072285915
+33 min, 38 sec: Epoch: 4  val_auc: 0.8046541461161589
+40 min, 27 sec: Epoch: 5  val_auc: 0.8057526360072849
+48 min, 19 sec: Epoch: 6  val_auc: 0.8075887685417895
+56 min, 59 sec: Epoch: 7  val_auc: 0.8081889217653674
+64 min, 12 sec: Epoch: 8  val_auc: 0.808503240560287
+71 min, 36 sec: Epoch: 9  val_auc: 0.8089890343263817
+79 min, 49 sec: Epoch: 10  val_auc: 0.8086965754080195
+86 min, 42 sec: Epoch: 11  val_auc: 0.8090435628596301
+93 min, 30 sec: Epoch: 12  val_auc: 0.8088403513291634

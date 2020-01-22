@@ -1,0 +1,89 @@
+0 min, 0 sec: Starting grid search job
+0 min, 0 sec: Outputs being written to ['012120-165300-validation-auc-results.csv', '012120-165300-train-auc-results.csv']
+0 min, 2 sec: Loaded data with shape (2800000, 201)
+0 min, 4 sec: Starting cross-validation
+0 min, 4 sec: Using config: layers:64+64+64+64-learn_rate:0.001-batch_size:128-dropout_rate:0.2-bathcnorm:False
+0 min, 4 sec: Starting fold 0
+0 min, 6 sec: Model Summary:
+Model: "sequential"
+_________________________________________________________________
+Layer (type)                 Output Shape              Param #   
+=================================================================
+dense (Dense)                (None, 64)                12864     
+_________________________________________________________________
+activation (Activation)      (None, 64)                0         
+_________________________________________________________________
+dropout (Dropout)            (None, 64)                0         
+_________________________________________________________________
+dense_1 (Dense)              (None, 64)                4160      
+_________________________________________________________________
+activation_1 (Activation)    (None, 64)                0         
+_________________________________________________________________
+dropout_1 (Dropout)          (None, 64)                0         
+_________________________________________________________________
+dense_2 (Dense)              (None, 64)                4160      
+_________________________________________________________________
+activation_2 (Activation)    (None, 64)                0         
+_________________________________________________________________
+dropout_2 (Dropout)          (None, 64)                0         
+_________________________________________________________________
+dense_3 (Dense)              (None, 64)                4160      
+_________________________________________________________________
+activation_3 (Activation)    (None, 64)                0         
+_________________________________________________________________
+dropout_3 (Dropout)          (None, 64)                0         
+_________________________________________________________________
+dense_4 (Dense)              (None, 1)                 65        
+=================================================================
+Total params: 25,409
+Trainable params: 25,409
+Non-trainable params: 0
+_________________________________________________________________
+
+0 min, 6 sec: Starting training...
+2 min, 27 sec: Epoch: 0  val_auc: 0.7875631055993793
+5 min, 42 sec: Epoch: 1  val_auc: 0.7964101580106822
+8 min, 52 sec: Epoch: 2  val_auc: 0.7966622754435478
+12 min, 6 sec: Epoch: 3  val_auc: 0.7945140442922874
+15 min, 22 sec: Epoch: 4  val_auc: 0.7950826314571852
+18 min, 37 sec: Epoch: 5  val_auc: 0.7921886175388118
+21 min, 44 sec: Epoch: 6  val_auc: 0.792368864102251
+24 min, 56 sec: Epoch: 7  val_auc: 0.7921521435001989
+28 min, 7 sec: Epoch: 8  val_auc: 0.7863402611351615
+31 min, 20 sec: Epoch: 9  val_auc: 0.7871649267976543
+34 min, 33 sec: Epoch: 10  val_auc: 0.786410836145161
+37 min, 46 sec: Epoch: 11  val_auc: 0.7846205406937754
+38 min, 40 sec: Trainin complete!
+38 min, 40 sec: Starting fold 1
+38 min, 42 sec: Starting training...
+41 min, 5 sec: Epoch: 0  val_auc: 0.7805499076381092
+44 min, 15 sec: Epoch: 1  val_auc: 0.7908381582646415
+47 min, 48 sec: Epoch: 2  val_auc: 0.7924416622876606
+51 min, 22 sec: Epoch: 3  val_auc: 0.791358500645146
+54 min, 40 sec: Epoch: 4  val_auc: 0.7913666524612747
+57 min, 53 sec: Epoch: 5  val_auc: 0.7885970602700227
+61 min, 7 sec: Epoch: 6  val_auc: 0.7872522362286642
+64 min, 31 sec: Epoch: 7  val_auc: 0.7821817758912282
+67 min, 52 sec: Epoch: 8  val_auc: 0.7890362918485918
+71 min, 6 sec: Epoch: 9  val_auc: 0.7860405672277557
+74 min, 20 sec: Epoch: 10  val_auc: 0.7812902205901741
+77 min, 32 sec: Epoch: 11  val_auc: 0.7843921000671092
+78 min, 32 sec: Trainin complete!
+78 min, 32 sec: Starting fold 2
+78 min, 37 sec: Starting training...
+81 min, 5 sec: Epoch: 0  val_auc: 0.7888829549090567
+84 min, 27 sec: Epoch: 1  val_auc: 0.7919647753521784
+87 min, 50 sec: Epoch: 2  val_auc: 0.7932774073412219
+91 min, 8 sec: Epoch: 3  val_auc: 0.7941667215370646
+94 min, 23 sec: Epoch: 4  val_auc: 0.7914004048643315
+97 min, 33 sec: Epoch: 5  val_auc: 0.7868787528383585
+100 min, 42 sec: Epoch: 6  val_auc: 0.785345141735427
+103 min, 52 sec: Epoch: 7  val_auc: 0.7858187452400278
+107 min, 6 sec: Epoch: 8  val_auc: 0.7843699625706929
+110 min, 18 sec: Epoch: 9  val_auc: 0.7885019812150572
+113 min, 32 sec: Epoch: 10  val_auc: 0.7849117542883375
+116 min, 45 sec: Epoch: 11  val_auc: 0.7827008489917897
+119 min, 59 sec: Epoch: 12  val_auc: 0.7822444777905939
+123 min, 12 sec: Epoch: 13  val_auc: 0.7833612769451603
+124 min, 6 sec: Trainin complete!
+124 min, 6 sec: Job complete...

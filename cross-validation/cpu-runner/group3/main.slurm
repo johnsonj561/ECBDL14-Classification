@@ -13,14 +13,14 @@ module load anaconda/anaconda3/5.0.1
 
 source activate jjohn273-tf2
 
-srun python3 ../../cross-validator.py \
-  debug=false \
-  epochs=250 \
-  hidden_layers=32+32 \
-  learn_rate=0.001 \
-  batch_size=128 \
-  dropout_rate=0.2 \
-  batchnorm=true
+#srun python3 ../../cross-validator.py \
+#  debug=false \
+#  epochs=250 \
+#  hidden_layers=32+32 \
+#  learn_rate=0.001 \
+#  batch_size=128 \
+#  dropout_rate=0.2 \
+#  batchnorm=true
 
 srun python3 ../../cross-validator.py \
   debug=false \

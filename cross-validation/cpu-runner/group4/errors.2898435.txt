@@ -15,3 +15,58 @@
 2020-01-20 19:45:23.763977: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1329] function cupti_interface_->EnableCallback( 0 , subscriber_, CUPTI_CB_DOMAIN_DRIVER_API, cbid)failed with error CUPTI could not be loaded or symbol could not be found.
 2020-01-20 19:45:23.764007: I tensorflow/core/profiler/internal/gpu/device_tracer.cc:88]  GpuTracer has collected 0 callback api events and 0 activity events.
 2020-01-20 19:48:56.467096: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 2986665600 exceeds 10% of system memory.
+2020-01-20 19:53:41.454132: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 2986665600 exceeds 10% of system memory.
+2020-01-20 19:58:20.454008: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 2986665600 exceeds 10% of system memory.
+2020-01-20 20:03:04.754971: W tensorflow/core/framework/cpu_allocator_impl.cc:81] Allocation of 2986665600 exceeds 10% of system memory.
+2020-01-20 21:23:44.785213: I tensorflow/core/profiler/lib/profiler_session.cc:225] Profiler session started.
+2020-01-20 21:23:44.785299: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1307] function cupti_interface_->Subscribe( &subscriber_, (CUpti_CallbackFunc)ApiCallback, this)failed with error CUPTI could not be loaded or symbol could not be found.
+2020-01-20 21:23:44.785313: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1346] function cupti_interface_->ActivityRegisterCallbacks( AllocCuptiActivityBuffer, FreeCuptiActivityBuffer)failed with error CUPTI could not be loaded or symbol could not be found.
+2020-01-20 21:23:44.793370: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1329] function cupti_interface_->EnableCallback( 0 , subscriber_, CUPTI_CB_DOMAIN_DRIVER_API, cbid)failed with error CUPTI could not be loaded or symbol could not be found.
+2020-01-20 21:23:44.793398: I tensorflow/core/profiler/internal/gpu/device_tracer.cc:88]  GpuTracer has collected 0 callback api events and 0 activity events.
+2020-01-20 22:39:32.683847: I tensorflow/core/profiler/lib/profiler_session.cc:225] Profiler session started.
+2020-01-20 22:39:32.683977: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1307] function cupti_interface_->Subscribe( &subscriber_, (CUpti_CallbackFunc)ApiCallback, this)failed with error CUPTI could not be loaded or symbol could not be found.
+2020-01-20 22:39:32.684005: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1346] function cupti_interface_->ActivityRegisterCallbacks( AllocCuptiActivityBuffer, FreeCuptiActivityBuffer)failed with error CUPTI could not be loaded or symbol could not be found.
+2020-01-20 22:39:32.719247: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1329] function cupti_interface_->EnableCallback( 0 , subscriber_, CUPTI_CB_DOMAIN_DRIVER_API, cbid)failed with error CUPTI could not be loaded or symbol could not be found.
+2020-01-20 22:39:32.719298: I tensorflow/core/profiler/internal/gpu/device_tracer.cc:88]  GpuTracer has collected 0 callback api events and 0 activity events.
+/cm/shared/apps/anaconda/anaconda3/5.0.1/lib/python3.6/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+2020-01-21 00:03:11.818787: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer.so.6'; dlerror: libnvinfer.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /cm/shared/apps/slurm/15.08.13/lib64/slurm:/cm/shared/apps/slurm/15.08.13/lib64:/cm/local/apps/gcc/5.2.0/lib:/cm/local/apps/gcc/5.2.0/lib64:/lib:/lib64:/usr/lib:/usr/lib64:/usr/local/lib:/usr/local/lib64:/cm/local/apps/cuda-driver/libs/390.46/lib64/
+2020-01-21 00:03:11.818962: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer_plugin.so.6'; dlerror: libnvinfer_plugin.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /cm/shared/apps/slurm/15.08.13/lib64/slurm:/cm/shared/apps/slurm/15.08.13/lib64:/cm/local/apps/gcc/5.2.0/lib:/cm/local/apps/gcc/5.2.0/lib64:/lib:/lib64:/usr/lib:/usr/lib64:/usr/local/lib:/usr/local/lib64:/cm/local/apps/cuda-driver/libs/390.46/lib64/
+2020-01-21 00:03:11.818977: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:30] Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+/cm/shared/apps/anaconda/anaconda3/5.0.1/lib/python3.6/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Traceback (most recent call last):
+  File "../../cross-validator.py", line 116, in <module>
+    if use_lr_reduction:
+NameError: name 'use_lr_reduction' is not defined
+srun: error: node032: task 0: Exited with exit code 1
+2020-01-21 00:03:24.409881: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer.so.6'; dlerror: libnvinfer.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /cm/shared/apps/slurm/15.08.13/lib64/slurm:/cm/shared/apps/slurm/15.08.13/lib64:/cm/local/apps/gcc/5.2.0/lib:/cm/local/apps/gcc/5.2.0/lib64:/lib:/lib64:/usr/lib:/usr/lib64:/usr/local/lib:/usr/local/lib64:/cm/local/apps/cuda-driver/libs/390.46/lib64/
+2020-01-21 00:03:24.410008: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer_plugin.so.6'; dlerror: libnvinfer_plugin.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /cm/shared/apps/slurm/15.08.13/lib64/slurm:/cm/shared/apps/slurm/15.08.13/lib64:/cm/local/apps/gcc/5.2.0/lib:/cm/local/apps/gcc/5.2.0/lib64:/lib:/lib64:/usr/lib:/usr/lib64:/usr/local/lib:/usr/local/lib64:/cm/local/apps/cuda-driver/libs/390.46/lib64/
+2020-01-21 00:03:24.410023: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:30] Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+/cm/shared/apps/anaconda/anaconda3/5.0.1/lib/python3.6/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Traceback (most recent call last):
+  File "../../cross-validator.py", line 116, in <module>
+    if use_lr_reduction:
+NameError: name 'use_lr_reduction' is not defined
+srun: error: node032: task 0: Exited with exit code 1
+2020-01-21 00:03:35.624876: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer.so.6'; dlerror: libnvinfer.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /cm/shared/apps/slurm/15.08.13/lib64/slurm:/cm/shared/apps/slurm/15.08.13/lib64:/cm/local/apps/gcc/5.2.0/lib:/cm/local/apps/gcc/5.2.0/lib64:/lib:/lib64:/usr/lib:/usr/lib64:/usr/local/lib:/usr/local/lib64:/cm/local/apps/cuda-driver/libs/390.46/lib64/
+2020-01-21 00:03:35.625006: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer_plugin.so.6'; dlerror: libnvinfer_plugin.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /cm/shared/apps/slurm/15.08.13/lib64/slurm:/cm/shared/apps/slurm/15.08.13/lib64:/cm/local/apps/gcc/5.2.0/lib:/cm/local/apps/gcc/5.2.0/lib64:/lib:/lib64:/usr/lib:/usr/lib64:/usr/local/lib:/usr/local/lib64:/cm/local/apps/cuda-driver/libs/390.46/lib64/
+2020-01-21 00:03:35.625021: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:30] Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+/cm/shared/apps/anaconda/anaconda3/5.0.1/lib/python3.6/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Traceback (most recent call last):
+  File "../../cross-validator.py", line 116, in <module>
+    if use_lr_reduction:
+NameError: name 'use_lr_reduction' is not defined
+srun: error: node032: task 0: Exited with exit code 1
+2020-01-21 00:03:46.630341: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer.so.6'; dlerror: libnvinfer.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /cm/shared/apps/slurm/15.08.13/lib64/slurm:/cm/shared/apps/slurm/15.08.13/lib64:/cm/local/apps/gcc/5.2.0/lib:/cm/local/apps/gcc/5.2.0/lib64:/lib:/lib64:/usr/lib:/usr/lib64:/usr/local/lib:/usr/local/lib64:/cm/local/apps/cuda-driver/libs/390.46/lib64/
+2020-01-21 00:03:46.630468: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer_plugin.so.6'; dlerror: libnvinfer_plugin.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /cm/shared/apps/slurm/15.08.13/lib64/slurm:/cm/shared/apps/slurm/15.08.13/lib64:/cm/local/apps/gcc/5.2.0/lib:/cm/local/apps/gcc/5.2.0/lib64:/lib:/lib64:/usr/lib:/usr/lib64:/usr/local/lib:/usr/local/lib64:/cm/local/apps/cuda-driver/libs/390.46/lib64/
+2020-01-21 00:03:46.630483: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:30] Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+/cm/shared/apps/anaconda/anaconda3/5.0.1/lib/python3.6/site-packages/h5py/__init__.py:36: FutureWarning: Conversion of the second argument of issubdtype from `float` to `np.floating` is deprecated. In future, it will be treated as `np.float64 == np.dtype(float).type`.
+  from ._conv import register_converters as _register_converters
+Traceback (most recent call last):
+  File "../../cross-validator.py", line 116, in <module>
+    if use_lr_reduction:
+NameError: name 'use_lr_reduction' is not defined
+srun: error: node032: task 0: Exited with exit code 1

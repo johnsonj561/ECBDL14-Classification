@@ -36,7 +36,8 @@ config['batchnorm'] = True if batchnorm.lower() == 'true' else False
 epochs = int(cli_args.get('epochs', 10))
 debug = cli_args.get('debug', 'false')
 debug = True if debug.lower() == 'true' else False
-
+use_lr_reduction = cli_args.get('use_lr_reduction', 'false')
+use_lr_reduction = True if use_lr_reduction.lower() == 'true' else False
 
 ############################################
 # Define I/O Paths
@@ -114,7 +115,9 @@ for fold, (train_index, validate_index) in enumerate(stratified_cv.split(x, y)):
     tensorboard = TensorBoard(log_dir=f'{tensorboard_dir}/fold-{fold}', write_graph=False)
     callbacks = [validation_auc_callback, train_auc_callback, early_stopping, tensorboard]
     if use_lr_reduction:
-        callbacks.append()
+        callbacks.append(ReduceLROnPlateau(
+            monitor='val_auc', factor=0.1, patience=5, 
+            mode='max', cooldown=0, min_lr=0.0001))
 
     # create model and log it's description on 1st run
     dnn = create_model(input_dim, config)

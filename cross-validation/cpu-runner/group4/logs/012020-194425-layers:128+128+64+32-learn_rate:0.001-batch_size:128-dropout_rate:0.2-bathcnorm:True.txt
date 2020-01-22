@@ -50,3 +50,64 @@ _________________________________________________________________
 
 0 min, 54 sec: Starting training...
 4 min, 31 sec: Epoch: 0  val_auc: 0.805914738183236
+9 min, 16 sec: Epoch: 1  val_auc: 0.8104037987708476
+13 min, 55 sec: Epoch: 2  val_auc: 0.8150374583935595
+18 min, 39 sec: Epoch: 3  val_auc: 0.8153272284967352
+23 min, 18 sec: Epoch: 4  val_auc: 0.816590569800581
+27 min, 51 sec: Epoch: 5  val_auc: 0.8173434234814088
+32 min, 28 sec: Epoch: 6  val_auc: 0.8176682645332652
+37 min, 3 sec: Epoch: 7  val_auc: 0.819128814349179
+41 min, 39 sec: Epoch: 8  val_auc: 0.8194138546969167
+46 min, 18 sec: Epoch: 9  val_auc: 0.8198985353747621
+50 min, 56 sec: Epoch: 10  val_auc: 0.8201430004388958
+55 min, 36 sec: Epoch: 11  val_auc: 0.8187184461369069
+60 min, 10 sec: Epoch: 12  val_auc: 0.8210585005555386
+64 min, 48 sec: Epoch: 13  val_auc: 0.8218344754339941
+69 min, 49 sec: Epoch: 14  val_auc: 0.8212464880932485
+74 min, 41 sec: Epoch: 15  val_auc: 0.8211561033498682
+79 min, 24 sec: Epoch: 16  val_auc: 0.8216772704738406
+84 min, 1 sec: Epoch: 17  val_auc: 0.8209559761686169
+88 min, 42 sec: Epoch: 18  val_auc: 0.8219725445558742
+93 min, 22 sec: Epoch: 19  val_auc: 0.8218868813236454
+98 min, 2 sec: Epoch: 20  val_auc: 0.822506034806697
+99 min, 10 sec: Trainin complete!
+99 min, 10 sec: Starting fold 1
+99 min, 14 sec: Starting training...
+102 min, 56 sec: Epoch: 0  val_auc: 0.8007310532455925
+107 min, 44 sec: Epoch: 1  val_auc: 0.8075141955823963
+112 min, 28 sec: Epoch: 2  val_auc: 0.8083237700055448
+117 min, 8 sec: Epoch: 3  val_auc: 0.8103434382812083
+121 min, 43 sec: Epoch: 4  val_auc: 0.8107466818029831
+126 min, 24 sec: Epoch: 5  val_auc: 0.8136165778256841
+131 min, 6 sec: Epoch: 6  val_auc: 0.8145314752120534
+135 min, 56 sec: Epoch: 7  val_auc: 0.8150035658060658
+140 min, 41 sec: Epoch: 8  val_auc: 0.8149827402987391
+145 min, 28 sec: Epoch: 9  val_auc: 0.816016284492942
+150 min, 15 sec: Epoch: 10  val_auc: 0.815858966348536
+154 min, 59 sec: Epoch: 11  val_auc: 0.8161673156571132
+159 min, 44 sec: Epoch: 12  val_auc: 0.8174383042819768
+164 min, 24 sec: Epoch: 13  val_auc: 0.8173695206473578
+169 min, 8 sec: Epoch: 14  val_auc: 0.8166133003016306
+173 min, 49 sec: Epoch: 15  val_auc: 0.8166268389192854
+174 min, 59 sec: Trainin complete!
+174 min, 59 sec: Starting fold 2
+175 min, 4 sec: Starting training...
+178 min, 45 sec: Epoch: 0  val_auc: 0.8010921744788662
+183 min, 41 sec: Epoch: 1  val_auc: 0.8123397806395795
+188 min, 35 sec: Epoch: 2  val_auc: 0.812947983007006
+193 min, 37 sec: Epoch: 3  val_auc: 0.8153165790001886
+198 min, 46 sec: Epoch: 4  val_auc: 0.8169507390663782
+203 min, 53 sec: Epoch: 5  val_auc: 0.8171490489145399
+208 min, 49 sec: Epoch: 6  val_auc: 0.8179489468769143
+213 min, 39 sec: Epoch: 7  val_auc: 0.8199886431053475
+218 min, 42 sec: Epoch: 8  val_auc: 0.8182889134718677
+223 min, 38 sec: Epoch: 9  val_auc: 0.8194989007757937
+228 min, 29 sec: Epoch: 10  val_auc: 0.8197724872878552
+233 min, 26 sec: Epoch: 11  val_auc: 0.8209174656639832
+238 min, 10 sec: Epoch: 12  val_auc: 0.8213593608133116
+242 min, 58 sec: Epoch: 13  val_auc: 0.8206707521319467
+247 min, 49 sec: Epoch: 14  val_auc: 0.8215813645479807
+252 min, 36 sec: Epoch: 15  val_auc: 0.8221547963110198
+257 min, 26 sec: Epoch: 16  val_auc: 0.8219759493275489
+258 min, 39 sec: Trainin complete!
+258 min, 39 sec: Job complete...
