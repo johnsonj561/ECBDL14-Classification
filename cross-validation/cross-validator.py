@@ -111,7 +111,7 @@ for fold, (train_index, validate_index) in enumerate(stratified_cv.split(x, y)):
     # setup callbacks for monitoring AUC and early stopping
     validation_auc_callback = KerasRocAucCallback(x_valid, y_valid, True, logger)
     train_auc_callback = KerasRocAucCallback(x_train, y_train)
-    early_stopping = EarlyStopping(monitor='val_auc', min_delta=0.005, patience=10, mode='max')
+    early_stopping = EarlyStopping(monitor='val_auc', min_delta=0.001, patience=15, mode='max')
     tensorboard = TensorBoard(log_dir=f'{tensorboard_dir}/fold-{fold}', write_graph=False)
     callbacks = [validation_auc_callback, train_auc_callback, early_stopping, tensorboard]
     if use_lr_reduction:
