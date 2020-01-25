@@ -35,3 +35,8 @@ def create_model(input_dim, config):
     return model
 
 
+def write_model(model, path):
+    json = model.to_json()
+    with open(path, 'w') as out:
+        out.write(json)
+

@@ -116,7 +116,7 @@ for fold, (train_index, validate_index) in enumerate(stratified_cv.split(x, y)):
     callbacks = [validation_auc_callback, train_auc_callback, early_stopping, tensorboard]
     if use_lr_reduction:
         callbacks.append(ReduceLROnPlateau(
-            monitor='val_auc', factor=0.1, patience=5, 
+            monitor='val_auc', factor=0.1, patience=5,
             mode='max', cooldown=0, min_lr=0.0001))
 
     # create model and log it's description on 1st run
