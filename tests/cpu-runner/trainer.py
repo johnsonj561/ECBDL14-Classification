@@ -25,11 +25,10 @@ from CustomCallbacks import KerasRocAucCallback
 ############################################
 config = {}
 cli_args = args_to_dict(sys.argv)
-pos_size = float(cli_args.get('pos_size', 1))
-neg_fraction = float(cli_args.get('neg_size', 1))
+pos_fraction = float(cli_args.get('positive_fraction', 1))
+neg_fraction = float(cli_args.get('negative_fraction', 1))
 epochs = int(cli_args.get('epochs'))
 runs = int(cli_args.get('runs'))
-
 
 ############################################
 #  Create DNN Config
@@ -53,7 +52,8 @@ data_key = 'train'
 now = datetime.datetime.today()
 ts = now.strftime("%m%d%y-%H%M%S")
 architecture_output = 'model-architecture.json'
-
+weights_dir = 'weights'
+experiment = f'{ts}-ros_{pos_fraction}-rus_{neg_fraction}'
 
 ############################################
 # Initialize Logger
@@ -67,8 +67,8 @@ logger.write_to_file()
 ############################################
 # Iterate Over Runs
 ############################################
-for run in runs:
-    logger.log_time(f'Starting run {run}')).write_to_file()
+for run in range(runs):
+    logger.log_time(f'Starting run {run}').write_to_file()
 
     # Load Data
     df = pd.read_hdf(data_path, data_key)
@@ -77,13 +77,13 @@ for run in runs:
 
     # Sample Pos/Neg Classes Separately
     y_pos, y_neg = y.loc[y == 1], y.loc[y == 0]
-    y_pos = y_pos.sample(frac=positive_fraction, replace=(positive_fraction > 1))
-    y_neg = y_neg.sample(frac=negative_fraction, replace=(negative_fraction > 1))
+    y_pos = y_pos.sample(frac=pos_fraction, replace=(pos_fraction > 1))
+    y_neg = y_neg.sample(frac=neg_fraction, replace=(neg_fraction > 1))
     x_pos, x_neg = x.loc[y_pos.index], x.loc[y_neg.index]
     pos_count, neg_count = len(y_pos), len(y_neg)
     pos_ratio = pos_count / (pos_count + neg_count)
     x, y = pd.concat([x_pos, x_neg], copy=False), pd.concat([y_pos, y_neg], copy=False)
-    del x_pos, x_neg, y_pos, y_nev
+    del x_pos, x_neg, y_pos, y_neg
 
     # Log data stats
     logger.log_time('Data loaded')
@@ -100,13 +100,13 @@ for run in runs:
 
     # train model
     logger.log_time('Starting training...').write_to_file()
-    dnn.fit(x_train, y_train, epochs=epochs, verbose=0)
+    dnn.fit(x, y, epochs=epochs, verbose=0)
     logger.log_time('Trainin complete!').write_to_file()
 
     # save weights
-    out = f'{experiment}-{run}-model.h5'
-    dnn.save_weights(out)
-    logger.log_time(f'Model weights saved to {out}')
+    model_output = f'{experiment}-{run}-model.h5'
+    dnn.save_weights(os.path.join(weights_dir, model_output))
+    logger.log_time(f'Model weights saved to {model_output}')
 
     # clean up data
     del x, y

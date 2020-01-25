@@ -1,0 +1,18 @@
+0 min, 0 sec: Starting trainer
+0 min, 0 sec: Starting run 0
+0 min, 4 sec: Data loaded
+0 min, 4 sec: Positive class size: 59960
+0 min, 4 sec: Negative class size: 274004
+0 min, 4 sec: Positive ratio: 0.1795403097339833
+0 min, 5 sec: Starting training...
+1 min, 4 sec: Trainin complete!
+1 min, 4 sec: Model weights saved to 012520-071912-ros_1.0-rus_0.1-0-model.h5
+1 min, 4 sec: Starting run 1
+1 min, 8 sec: Data loaded
+1 min, 8 sec: Positive class size: 59960
+1 min, 8 sec: Negative class size: 274004
+1 min, 8 sec: Positive ratio: 0.1795403097339833
+1 min, 9 sec: Starting training...
+2 min, 7 sec: Trainin complete!
+2 min, 7 sec: Model weights saved to 012520-071912-ros_1.0-rus_0.1-1-model.h5
+2 min, 7 sec: Job complete...
