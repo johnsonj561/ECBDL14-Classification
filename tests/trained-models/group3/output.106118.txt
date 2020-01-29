@@ -1,0 +1,15 @@
+Python version: 3.6.8 (default, Aug  7 2019, 17:28:10) 
+[GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+Loaded cli args: positive_ratio: 90% pos_fraction:1.0 neg_fraction:0.0024314 epochs:50 runs:30 debug: True
+Python version: 3.6.8 (default, Aug  7 2019, 17:28:10) 
+[GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+Loaded cli args: positive_ratio: 80% pos_fraction:1.0 neg_fraction:0.0054707 epochs:50 runs:30 debug: True
+Python version: 3.6.8 (default, Aug  7 2019, 17:28:10) 
+[GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+Loaded cli args: positive_ratio: 70% pos_fraction:1.0 neg_fraction:0.009378 epochs:50 runs:30 debug: True
+Python version: 3.6.8 (default, Aug  7 2019, 17:28:10) 
+[GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+Loaded cli args: positive_ratio: 60% pos_fraction:1.0 neg_fraction:0.0145885 epochs:50 runs:30 debug: True
+Python version: 3.6.8 (default, Aug  7 2019, 17:28:10) 
+[GCC 4.8.5 20150623 (Red Hat 4.8.5-39)]
+Loaded cli args: positive_ratio: 50% pos_fraction:1.0 neg_fraction:0.021882 epochs:50 runs:30 debug: True

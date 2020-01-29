@@ -1,0 +1,242 @@
+0 min, 0 sec: Starting trainer
+0 min, 0 sec: Starting run 0
+0 min, 17 sec: Data loaded
+0 min, 17 sec: Positive class size: 59960
+0 min, 17 sec: Negative class size: 139906
+0 min, 17 sec: Positive ratio: 0.3000010006704492
+0 min, 18 sec: Starting training...
+44 min, 1 sec: Trainin complete!
+44 min, 1 sec: Model weights saved to 30%-0-model.h5
+44 min, 1 sec: Starting run 1
+44 min, 33 sec: Data loaded
+44 min, 33 sec: Positive class size: 59960
+44 min, 33 sec: Negative class size: 139906
+44 min, 33 sec: Positive ratio: 0.3000010006704492
+44 min, 35 sec: Starting training...
+88 min, 6 sec: Trainin complete!
+88 min, 6 sec: Model weights saved to 30%-1-model.h5
+88 min, 6 sec: Starting run 2
+88 min, 38 sec: Data loaded
+88 min, 38 sec: Positive class size: 59960
+88 min, 38 sec: Negative class size: 139906
+88 min, 38 sec: Positive ratio: 0.3000010006704492
+88 min, 39 sec: Starting training...
+132 min, 3 sec: Trainin complete!
+132 min, 3 sec: Model weights saved to 30%-2-model.h5
+132 min, 3 sec: Starting run 3
+132 min, 35 sec: Data loaded
+132 min, 35 sec: Positive class size: 59960
+132 min, 35 sec: Negative class size: 139906
+132 min, 35 sec: Positive ratio: 0.3000010006704492
+132 min, 37 sec: Starting training...
+175 min, 58 sec: Trainin complete!
+175 min, 58 sec: Model weights saved to 30%-3-model.h5
+175 min, 58 sec: Starting run 4
+176 min, 30 sec: Data loaded
+176 min, 30 sec: Positive class size: 59960
+176 min, 30 sec: Negative class size: 139906
+176 min, 30 sec: Positive ratio: 0.3000010006704492
+176 min, 32 sec: Starting training...
+219 min, 57 sec: Trainin complete!
+219 min, 57 sec: Model weights saved to 30%-4-model.h5
+219 min, 57 sec: Starting run 5
+220 min, 29 sec: Data loaded
+220 min, 29 sec: Positive class size: 59960
+220 min, 29 sec: Negative class size: 139906
+220 min, 29 sec: Positive ratio: 0.3000010006704492
+220 min, 31 sec: Starting training...
+263 min, 56 sec: Trainin complete!
+263 min, 56 sec: Model weights saved to 30%-5-model.h5
+263 min, 56 sec: Starting run 6
+264 min, 29 sec: Data loaded
+264 min, 29 sec: Positive class size: 59960
+264 min, 29 sec: Negative class size: 139906
+264 min, 29 sec: Positive ratio: 0.3000010006704492
+264 min, 30 sec: Starting training...
+307 min, 45 sec: Trainin complete!
+307 min, 45 sec: Model weights saved to 30%-6-model.h5
+307 min, 45 sec: Starting run 7
+308 min, 17 sec: Data loaded
+308 min, 17 sec: Positive class size: 59960
+308 min, 17 sec: Negative class size: 139906
+308 min, 17 sec: Positive ratio: 0.3000010006704492
+308 min, 20 sec: Starting training...
+351 min, 49 sec: Trainin complete!
+351 min, 49 sec: Model weights saved to 30%-7-model.h5
+351 min, 49 sec: Starting run 8
+352 min, 21 sec: Data loaded
+352 min, 21 sec: Positive class size: 59960
+352 min, 21 sec: Negative class size: 139906
+352 min, 21 sec: Positive ratio: 0.3000010006704492
+352 min, 23 sec: Starting training...
+395 min, 46 sec: Trainin complete!
+395 min, 46 sec: Model weights saved to 30%-8-model.h5
+395 min, 46 sec: Starting run 9
+396 min, 19 sec: Data loaded
+396 min, 19 sec: Positive class size: 59960
+396 min, 19 sec: Negative class size: 139906
+396 min, 19 sec: Positive ratio: 0.3000010006704492
+396 min, 20 sec: Starting training...
+439 min, 38 sec: Trainin complete!
+439 min, 38 sec: Model weights saved to 30%-9-model.h5
+439 min, 38 sec: Starting run 10
+440 min, 10 sec: Data loaded
+440 min, 10 sec: Positive class size: 59960
+440 min, 10 sec: Negative class size: 139906
+440 min, 10 sec: Positive ratio: 0.3000010006704492
+440 min, 13 sec: Starting training...
+483 min, 39 sec: Trainin complete!
+483 min, 39 sec: Model weights saved to 30%-10-model.h5
+483 min, 39 sec: Starting run 11
+484 min, 11 sec: Data loaded
+484 min, 11 sec: Positive class size: 59960
+484 min, 11 sec: Negative class size: 139906
+484 min, 11 sec: Positive ratio: 0.3000010006704492
+484 min, 13 sec: Starting training...
+527 min, 51 sec: Trainin complete!
+527 min, 51 sec: Model weights saved to 30%-11-model.h5
+527 min, 51 sec: Starting run 12
+528 min, 24 sec: Data loaded
+528 min, 24 sec: Positive class size: 59960
+528 min, 24 sec: Negative class size: 139906
+528 min, 24 sec: Positive ratio: 0.3000010006704492
+528 min, 25 sec: Starting training...
+571 min, 49 sec: Trainin complete!
+572 min, 12 sec: Model weights saved to 30%-12-model.h5
+572 min, 12 sec: Starting run 13
+572 min, 44 sec: Data loaded
+572 min, 44 sec: Positive class size: 59960
+572 min, 44 sec: Negative class size: 139906
+572 min, 44 sec: Positive ratio: 0.3000010006704492
+572 min, 46 sec: Starting training...
+616 min, 10 sec: Trainin complete!
+616 min, 11 sec: Model weights saved to 30%-13-model.h5
+616 min, 11 sec: Starting run 14
+616 min, 43 sec: Data loaded
+616 min, 43 sec: Positive class size: 59960
+616 min, 43 sec: Negative class size: 139906
+616 min, 43 sec: Positive ratio: 0.3000010006704492
+616 min, 45 sec: Starting training...
+660 min, 5 sec: Trainin complete!
+660 min, 5 sec: Model weights saved to 30%-14-model.h5
+660 min, 5 sec: Starting run 15
+660 min, 38 sec: Data loaded
+660 min, 38 sec: Positive class size: 59960
+660 min, 38 sec: Negative class size: 139906
+660 min, 38 sec: Positive ratio: 0.3000010006704492
+660 min, 39 sec: Starting training...
+704 min, 12 sec: Trainin complete!
+704 min, 12 sec: Model weights saved to 30%-15-model.h5
+704 min, 12 sec: Starting run 16
+704 min, 45 sec: Data loaded
+704 min, 45 sec: Positive class size: 59960
+704 min, 45 sec: Negative class size: 139906
+704 min, 45 sec: Positive ratio: 0.3000010006704492
+704 min, 46 sec: Starting training...
+748 min, 12 sec: Trainin complete!
+748 min, 12 sec: Model weights saved to 30%-16-model.h5
+748 min, 12 sec: Starting run 17
+748 min, 45 sec: Data loaded
+748 min, 45 sec: Positive class size: 59960
+748 min, 45 sec: Negative class size: 139906
+748 min, 45 sec: Positive ratio: 0.3000010006704492
+748 min, 46 sec: Starting training...
+792 min, 11 sec: Trainin complete!
+792 min, 11 sec: Model weights saved to 30%-17-model.h5
+792 min, 11 sec: Starting run 18
+792 min, 43 sec: Data loaded
+792 min, 43 sec: Positive class size: 59960
+792 min, 43 sec: Negative class size: 139906
+792 min, 43 sec: Positive ratio: 0.3000010006704492
+792 min, 45 sec: Starting training...
+836 min, 15 sec: Trainin complete!
+836 min, 15 sec: Model weights saved to 30%-18-model.h5
+836 min, 15 sec: Starting run 19
+836 min, 47 sec: Data loaded
+836 min, 47 sec: Positive class size: 59960
+836 min, 47 sec: Negative class size: 139906
+836 min, 47 sec: Positive ratio: 0.3000010006704492
+836 min, 48 sec: Starting training...
+880 min, 23 sec: Trainin complete!
+880 min, 23 sec: Model weights saved to 30%-19-model.h5
+880 min, 23 sec: Starting run 20
+880 min, 56 sec: Data loaded
+880 min, 56 sec: Positive class size: 59960
+880 min, 56 sec: Negative class size: 139906
+880 min, 56 sec: Positive ratio: 0.3000010006704492
+880 min, 57 sec: Starting training...
+914 min, 14 sec: Trainin complete!
+914 min, 14 sec: Model weights saved to 30%-20-model.h5
+914 min, 14 sec: Starting run 21
+914 min, 37 sec: Data loaded
+914 min, 37 sec: Positive class size: 59960
+914 min, 37 sec: Negative class size: 139906
+914 min, 37 sec: Positive ratio: 0.3000010006704492
+914 min, 38 sec: Starting training...
+946 min, 57 sec: Trainin complete!
+946 min, 58 sec: Model weights saved to 30%-21-model.h5
+946 min, 58 sec: Starting run 22
+947 min, 20 sec: Data loaded
+947 min, 20 sec: Positive class size: 59960
+947 min, 20 sec: Negative class size: 139906
+947 min, 20 sec: Positive ratio: 0.3000010006704492
+947 min, 21 sec: Starting training...
+979 min, 39 sec: Trainin complete!
+979 min, 39 sec: Model weights saved to 30%-22-model.h5
+979 min, 39 sec: Starting run 23
+980 min, 2 sec: Data loaded
+980 min, 2 sec: Positive class size: 59960
+980 min, 2 sec: Negative class size: 139906
+980 min, 2 sec: Positive ratio: 0.3000010006704492
+980 min, 3 sec: Starting training...
+1012 min, 25 sec: Trainin complete!
+1012 min, 25 sec: Model weights saved to 30%-23-model.h5
+1012 min, 25 sec: Starting run 24
+1012 min, 48 sec: Data loaded
+1012 min, 48 sec: Positive class size: 59960
+1012 min, 48 sec: Negative class size: 139906
+1012 min, 48 sec: Positive ratio: 0.3000010006704492
+1012 min, 49 sec: Starting training...
+1045 min, 7 sec: Trainin complete!
+1045 min, 7 sec: Model weights saved to 30%-24-model.h5
+1045 min, 7 sec: Starting run 25
+1045 min, 30 sec: Data loaded
+1045 min, 30 sec: Positive class size: 59960
+1045 min, 30 sec: Negative class size: 139906
+1045 min, 30 sec: Positive ratio: 0.3000010006704492
+1045 min, 31 sec: Starting training...
+1077 min, 54 sec: Trainin complete!
+1077 min, 54 sec: Model weights saved to 30%-25-model.h5
+1077 min, 54 sec: Starting run 26
+1078 min, 16 sec: Data loaded
+1078 min, 16 sec: Positive class size: 59960
+1078 min, 16 sec: Negative class size: 139906
+1078 min, 16 sec: Positive ratio: 0.3000010006704492
+1078 min, 17 sec: Starting training...
+1110 min, 36 sec: Trainin complete!
+1110 min, 36 sec: Model weights saved to 30%-26-model.h5
+1110 min, 36 sec: Starting run 27
+1110 min, 60 sec: Data loaded
+1110 min, 60 sec: Positive class size: 59960
+1110 min, 60 sec: Negative class size: 139906
+1110 min, 60 sec: Positive ratio: 0.3000010006704492
+1111 min, 1 sec: Starting training...
+1143 min, 18 sec: Trainin complete!
+1143 min, 18 sec: Model weights saved to 30%-27-model.h5
+1143 min, 18 sec: Starting run 28
+1143 min, 40 sec: Data loaded
+1143 min, 40 sec: Positive class size: 59960
+1143 min, 40 sec: Negative class size: 139906
+1143 min, 40 sec: Positive ratio: 0.3000010006704492
+1143 min, 41 sec: Starting training...
+1176 min, 3 sec: Trainin complete!
+1176 min, 3 sec: Model weights saved to 30%-28-model.h5
+1176 min, 3 sec: Starting run 29
+1176 min, 26 sec: Data loaded
+1176 min, 26 sec: Positive class size: 59960
+1176 min, 26 sec: Negative class size: 139906
+1176 min, 26 sec: Positive ratio: 0.3000010006704492
+1176 min, 27 sec: Starting training...
+1208 min, 54 sec: Trainin complete!
+1208 min, 54 sec: Model weights saved to 30%-29-model.h5
+1208 min, 54 sec: Job complete...

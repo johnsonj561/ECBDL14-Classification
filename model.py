@@ -4,7 +4,8 @@ Sequential = Keras.models.Sequential
 Activation = Keras.layers.Activation
 Adam = Keras.optimizers.Adam
 Dense, Dropout, BatchNormalization = Keras.layers.Dense, Keras.layers.Dropout, Keras.layers.BatchNormalization
-K = Keras.backend
+multi_gpu_model = Keras.utils.multi_gpu_model
+K =  Keras.backend
 
 def create_model(input_dim, config):
     K.clear_session()
@@ -13,7 +14,8 @@ def create_model(input_dim, config):
     batchnorm = config.get('batchnorm', False)
     hidden_layers = config.get('hidden_layers', [32])
     activation = config.get('activation', 'relu')
-    optimizer = config.get('optimizer', Adam)
+    optimizer = config.get('optimizer', Adam)    
+    gpu_count = config.get('gpus', 0)
 
     model = Sequential()
 
@@ -30,6 +32,11 @@ def create_model(input_dim, config):
 
     # output layer
     model.add(Dense(1, activation='sigmoid'))
+    
+    # use gpus?
+    if gpu_count > 1:
+        model = multi_gpu_model(model, gpu_count)
+
     model.compile(loss='binary_crossentropy', optimizer=optimizer(learn_rate))
 
     return model
