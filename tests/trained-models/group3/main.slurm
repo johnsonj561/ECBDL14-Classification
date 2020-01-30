@@ -13,39 +13,39 @@
 source /home/jjohn273/git/ECBDL14-Classification/env/bin/activate
 
 # 50%
-srun python3 ../trainer.py \
+srun python3 ../../trainer.py \
   epochs=50 \
   runs=30 \
   positive_fraction=1 \
   negative_fraction=0.021882 \
   positive_ratio=50% &
-  
+
 # 60%
-srun python3 ../trainer.py \
+srun python3 ../../trainer.py \
   epochs=50 \
   runs=30 \
   positive_fraction=1 \
   negative_fraction=0.0145885 \
   positive_ratio=60% &
-  
+
 # 70%
-srun python3 ../trainer.py \
+srun python3 ../../trainer.py \
   epochs=50 \
   runs=30 \
   positive_fraction=1 \
   negative_fraction=0.009378 \
   positive_ratio=70% &
-  
+
 # 80%
-srun python3 ../trainer.py \
+srun python3 ../../trainer.py \
   epochs=50 \
   runs=30 \
   positive_fraction=1 \
   negative_fraction=0.0054707 \
   positive_ratio=80% &
-  
+
 # 90%
-srun python3 ../trainer.py \
+srun python3 ../../trainer.py \
   epochs=50 \
   runs=30 \
   positive_fraction=1 \
