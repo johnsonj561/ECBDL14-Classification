@@ -5,6 +5,8 @@
 #SBATCH -e errors.%j.txt
 #SBATCH -o output.%j.txt
 #SBATCH -p longq-bigdata7
+#SBATCH -w node087
+#SBATCH -c 8
 #SBATCH --mail-user=jjohn273@fau.edu
 #SBATCH --mail-type=ALL
 

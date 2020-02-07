@@ -125,8 +125,13 @@ trained_models = pd.DataFrame(trained_models, columns=['pos_size', 'run', 'path'
     .sort_values(by=['pos_size', 'run'])
 
 
+# skip completed rows
+skip_rows = ['0.5%', '1%', '2%', '10%']
+
 # make predictions with each trained model
 for (pos_size, run, weights_file) in trained_models.values:
+    if pos_size in skip_rows:
+        continue
     if counts[pos_size] < 30:
         continue
     if run == 0:

@@ -1,0 +1,36 @@
+Starting 20%
+Starting run 0
+Starting run 10
+Starting run 20
+Starting 30%
+Starting run 0
+Starting run 10
+Starting run 20
+Starting 40%
+Starting run 0
+Starting run 10
+Starting run 20
+Starting 5%
+Starting run 0
+Starting run 10
+Starting run 20
+Starting 50%
+Starting run 0
+Starting run 10
+Starting run 20
+Starting 60%
+Starting run 0
+Starting run 10
+Starting run 20
+Starting 70%
+Starting run 0
+Starting run 10
+Starting run 20
+Starting 80%
+Starting run 0
+Starting run 10
+Starting run 20
+Starting 90%
+Starting run 0
+Starting run 10
+Starting run 20
