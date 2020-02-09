@@ -1,0 +1,33 @@
+0 min, 0 sec: Starting grid search job
+0 min, 0 sec: Outputs being written to ['020820-205833-validation-auc-results.csv', '020820-205833-train-auc-results.csv']
+0 min, 6 sec: Loaded data with shape (2800000, 201)
+0 min, 42 sec: Completed run with threshold: 0.12500000000000003
+0 min, 44 sec: Completed run with threshold: 0.049999999999999996
+0 min, 45 sec: Completed run with threshold: 0.030000000000000002
+0 min, 47 sec: Completed run with threshold: 0.030000000000000002
+0 min, 49 sec: Completed run with threshold: 0.035
+0 min, 51 sec: Completed run with threshold: 0.025
+0 min, 53 sec: Completed run with threshold: 0.030000000000000002
+0 min, 55 sec: Completed run with threshold: 0.030000000000000002
+0 min, 56 sec: Completed run with threshold: 0.030000000000000002
+0 min, 58 sec: Completed run with threshold: 0.030000000000000002
+0 min, 60 sec: Completed run with threshold: 0.04
+1 min, 2 sec: Completed run with threshold: 0.04
+1 min, 4 sec: Completed run with threshold: 0.035
+1 min, 5 sec: Completed run with threshold: 0.030000000000000002
+1 min, 7 sec: Completed run with threshold: 0.035
+1 min, 9 sec: Completed run with threshold: 0.035
+1 min, 11 sec: Completed run with threshold: 0.049999999999999996
+1 min, 13 sec: Completed run with threshold: 0.045
+1 min, 15 sec: Completed run with threshold: 0.030000000000000002
+1 min, 16 sec: Completed run with threshold: 0.04
+1 min, 18 sec: Completed run with threshold: 0.035
+1 min, 20 sec: Completed run with threshold: 0.049999999999999996
+1 min, 22 sec: Completed run with threshold: 0.06499999999999999
+1 min, 24 sec: Completed run with threshold: 0.04
+1 min, 26 sec: Completed run with threshold: 0.04
+1 min, 28 sec: Completed run with threshold: 0.05499999999999999
+1 min, 30 sec: Completed run with threshold: 0.05499999999999999
+1 min, 32 sec: Completed run with threshold: 0.05499999999999999
+1 min, 34 sec: Completed run with threshold: 0.049999999999999996
+1 min, 36 sec: Completed run with threshold: 0.05999999999999999
