@@ -1,0 +1,71 @@
+srun: error: NodeNames=nodegpu[002-005] CPUs=# or Procs=# with Boards=# is invalid and is ignored.
+srun: error: NodeNames=nodegpu[002-005] CPUs=# or Procs=# with Boards=# is invalid and is ignored.
+srun: error: NodeNames=nodegpu[002-005] CPUs=# or Procs=# with Boards=# is invalid and is ignored.
+2020-02-11 07:31:06.319647: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer.so.6'; dlerror: libnvinfer.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ohpc/pub/mpi/openmpi3-gnu8/3.1.4/lib:/opt/ohpc/pub/compiler/gcc/8.3.0/lib64:/cm/local/apps/cuda-driver/libs/390.46/lib64/
+2020-02-11 07:31:06.319644: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer.so.6'; dlerror: libnvinfer.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ohpc/pub/mpi/openmpi3-gnu8/3.1.4/lib:/opt/ohpc/pub/compiler/gcc/8.3.0/lib64:/cm/local/apps/cuda-driver/libs/390.46/lib64/
+2020-02-11 07:31:06.319644: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer.so.6'; dlerror: libnvinfer.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ohpc/pub/mpi/openmpi3-gnu8/3.1.4/lib:/opt/ohpc/pub/compiler/gcc/8.3.0/lib64:/cm/local/apps/cuda-driver/libs/390.46/lib64/
+2020-02-11 07:31:06.320463: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer_plugin.so.6'; dlerror: libnvinfer_plugin.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ohpc/pub/mpi/openmpi3-gnu8/3.1.4/lib:/opt/ohpc/pub/compiler/gcc/8.3.0/lib64:/cm/local/apps/cuda-driver/libs/390.46/lib64/
+2020-02-11 07:31:06.320462: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer_plugin.so.6'; dlerror: libnvinfer_plugin.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ohpc/pub/mpi/openmpi3-gnu8/3.1.4/lib:/opt/ohpc/pub/compiler/gcc/8.3.0/lib64:/cm/local/apps/cuda-driver/libs/390.46/lib64/
+2020-02-11 07:31:06.320485: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:30] Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2020-02-11 07:31:06.320461: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libnvinfer_plugin.so.6'; dlerror: libnvinfer_plugin.so.6: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ohpc/pub/mpi/openmpi3-gnu8/3.1.4/lib:/opt/ohpc/pub/compiler/gcc/8.3.0/lib64:/cm/local/apps/cuda-driver/libs/390.46/lib64/
+2020-02-11 07:31:06.320483: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:30] Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2020-02-11 07:31:06.320483: W tensorflow/compiler/tf2tensorrt/utils/py_utils.cc:30] Cannot dlopen some TensorRT libraries. If you would like to use Nvidia GPU with TensorRT, please make sure the missing libraries mentioned above are installed properly.
+2020-02-11 07:31:21.976633: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ohpc/pub/mpi/openmpi3-gnu8/3.1.4/lib:/opt/ohpc/pub/compiler/gcc/8.3.0/lib64:/cm/local/apps/cuda-driver/libs/390.46/lib64/
+2020-02-11 07:31:21.976670: E tensorflow/stream_executor/cuda/cuda_driver.cc:351] failed call to cuInit: UNKNOWN ERROR (303)
+2020-02-11 07:31:21.976697: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (node087.hpc.fau.edu): /proc/driver/nvidia/version does not exist
+2020-02-11 07:31:21.976986: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-02-11 07:31:21.985486: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2594170000 Hz
+2020-02-11 07:31:21.986108: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x3fc4a30 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-02-11 07:31:21.986123: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-02-11 07:31:21.987083: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ohpc/pub/mpi/openmpi3-gnu8/3.1.4/lib:/opt/ohpc/pub/compiler/gcc/8.3.0/lib64:/cm/local/apps/cuda-driver/libs/390.46/lib64/
+2020-02-11 07:31:21.987109: E tensorflow/stream_executor/cuda/cuda_driver.cc:351] failed call to cuInit: UNKNOWN ERROR (303)
+2020-02-11 07:31:21.987130: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (node087.hpc.fau.edu): /proc/driver/nvidia/version does not exist
+2020-02-11 07:31:21.987387: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-02-11 07:31:21.990774: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcuda.so.1'; dlerror: libcuda.so.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ohpc/pub/mpi/openmpi3-gnu8/3.1.4/lib:/opt/ohpc/pub/compiler/gcc/8.3.0/lib64:/cm/local/apps/cuda-driver/libs/390.46/lib64/
+2020-02-11 07:31:21.990799: E tensorflow/stream_executor/cuda/cuda_driver.cc:351] failed call to cuInit: UNKNOWN ERROR (303)
+2020-02-11 07:31:21.990819: I tensorflow/stream_executor/cuda/cuda_diagnostics.cc:156] kernel driver does not appear to be running on this host (node087.hpc.fau.edu): /proc/driver/nvidia/version does not exist
+2020-02-11 07:31:21.991053: I tensorflow/core/platform/cpu_feature_guard.cc:142] Your CPU supports instructions that this TensorFlow binary was not compiled to use: AVX2 FMA
+2020-02-11 07:31:21.998063: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2594170000 Hz
+2020-02-11 07:31:21.998514: I tensorflow/core/platform/profile_utils/cpu_utils.cc:94] CPU Frequency: 2594170000 Hz
+2020-02-11 07:31:21.998673: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5854820 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-02-11 07:31:21.998693: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-02-11 07:31:21.998622: I tensorflow/compiler/xla/service/service.cc:168] XLA service 0x5878990 initialized for platform Host (this does not guarantee that XLA will be used). Devices:
+2020-02-11 07:31:21.998640: I tensorflow/compiler/xla/service/service.cc:176]   StreamExecutor device (0): Host, Default Version
+2020-02-11 07:31:26.119639: I tensorflow/core/profiler/lib/profiler_session.cc:225] Profiler session started.
+2020-02-11 07:31:26.119597: I tensorflow/core/profiler/lib/profiler_session.cc:225] Profiler session started.
+2020-02-11 07:31:26.120558: I tensorflow/core/profiler/lib/profiler_session.cc:225] Profiler session started.
+2020-02-11 07:31:26.122573: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcupti.so.10.1'; dlerror: libcupti.so.10.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ohpc/pub/mpi/openmpi3-gnu8/3.1.4/lib:/opt/ohpc/pub/compiler/gcc/8.3.0/lib64:/cm/local/apps/cuda-driver/libs/390.46/lib64/
+2020-02-11 07:31:26.122626: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1307] function cupti_interface_->Subscribe( &subscriber_, (CUpti_CallbackFunc)ApiCallback, this)failed with error CUPTI could not be loaded or symbol could not be found.
+2020-02-11 07:31:26.122648: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1346] function cupti_interface_->ActivityRegisterCallbacks( AllocCuptiActivityBuffer, FreeCuptiActivityBuffer)failed with error CUPTI could not be loaded or symbol could not be found.
+2020-02-11 07:31:26.122572: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcupti.so.10.1'; dlerror: libcupti.so.10.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ohpc/pub/mpi/openmpi3-gnu8/3.1.4/lib:/opt/ohpc/pub/compiler/gcc/8.3.0/lib64:/cm/local/apps/cuda-driver/libs/390.46/lib64/
+2020-02-11 07:31:26.122625: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1307] function cupti_interface_->Subscribe( &subscriber_, (CUpti_CallbackFunc)ApiCallback, this)failed with error CUPTI could not be loaded or symbol could not be found.
+2020-02-11 07:31:26.122646: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1346] function cupti_interface_->ActivityRegisterCallbacks( AllocCuptiActivityBuffer, FreeCuptiActivityBuffer)failed with error CUPTI could not be loaded or symbol could not be found.
+2020-02-11 07:31:26.122863: W tensorflow/stream_executor/platform/default/dso_loader.cc:55] Could not load dynamic library 'libcupti.so.10.1'; dlerror: libcupti.so.10.1: cannot open shared object file: No such file or directory; LD_LIBRARY_PATH: /opt/ohpc/pub/mpi/openmpi3-gnu8/3.1.4/lib:/opt/ohpc/pub/compiler/gcc/8.3.0/lib64:/cm/local/apps/cuda-driver/libs/390.46/lib64/
+2020-02-11 07:31:26.122912: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1307] function cupti_interface_->Subscribe( &subscriber_, (CUpti_CallbackFunc)ApiCallback, this)failed with error CUPTI could not be loaded or symbol could not be found.
+2020-02-11 07:31:26.122933: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1346] function cupti_interface_->ActivityRegisterCallbacks( AllocCuptiActivityBuffer, FreeCuptiActivityBuffer)failed with error CUPTI could not be loaded or symbol could not be found.
+2020-02-11 07:31:26.157211: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1329] function cupti_interface_->EnableCallback( 0 , subscriber_, CUPTI_CB_DOMAIN_DRIVER_API, cbid)failed with error CUPTI could not be loaded or symbol could not be found.
+2020-02-11 07:31:26.157284: I tensorflow/core/profiler/internal/gpu/device_tracer.cc:88]  GpuTracer has collected 0 callback api events and 0 activity events.
+2020-02-11 07:31:26.159040: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1329] function cupti_interface_->EnableCallback( 0 , subscriber_, CUPTI_CB_DOMAIN_DRIVER_API, cbid)failed with error CUPTI could not be loaded or symbol could not be found.
+2020-02-11 07:31:26.159104: I tensorflow/core/profiler/internal/gpu/device_tracer.cc:88]  GpuTracer has collected 0 callback api events and 0 activity events.
+2020-02-11 07:31:26.166803: E tensorflow/core/profiler/internal/gpu/cupti_tracer.cc:1329] function cupti_interface_->EnableCallback( 0 , subscriber_, CUPTI_CB_DOMAIN_DRIVER_API, cbid)failed with error CUPTI could not be loaded or symbol could not be found.
+2020-02-11 07:31:26.166860: I tensorflow/core/profiler/internal/gpu/device_tracer.cc:88]  GpuTracer has collected 0 callback api events and 0 activity events.
+slurmstepd: error: Detected 8 oom-kill event(s) in step 114861.2 cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.
+slurmstepd: error: Detected 8 oom-kill event(s) in step 114861.1 cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.
+srun: error: node087: task 0: Out Of Memory
+srun: error: node087: task 0: Out Of Memory
+Traceback (most recent call last):
+  File "../../threshold-monitor.py", line 129, in <module>
+    dnn.save_weights(os.path.join(weights_dir, model_output))
+  File "/home/jjohn273/git/ECBDL14-Classification/env/lib64/python3.6/site-packages/tensorflow_core/python/keras/engine/network.py", line 1106, in save_weights
+    with h5py.File(filepath, 'w') as f:
+  File "/home/jjohn273/git/ECBDL14-Classification/env/lib64/python3.6/site-packages/h5py/_hl/files.py", line 408, in __init__
+    swmr=swmr)
+  File "/home/jjohn273/git/ECBDL14-Classification/env/lib64/python3.6/site-packages/h5py/_hl/files.py", line 179, in make_fid
+    fid = h5f.create(name, h5f.ACC_TRUNC, fapl=fapl, fcpl=fcpl)
+  File "h5py/_objects.pyx", line 54, in h5py._objects.with_phil.wrapper
+  File "h5py/_objects.pyx", line 55, in h5py._objects.with_phil.wrapper
+  File "h5py/h5f.pyx", line 108, in h5py.h5f.create
+OSError: Unable to create file (unable to open file: name = 'weights/None-0-model.h5', errno = 2, error message = 'No such file or directory', flags = 13, o_flags = 242)
+slurmstepd: error: Detected 8 oom-kill event(s) in step 114861.0 cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.
+srun: error: node087: task 0: Out Of Memory
+slurmstepd: error: Detected 8 oom-kill event(s) in step 114861.batch cgroup. Some of your processes may have been killed by the cgroup out-of-memory handler.

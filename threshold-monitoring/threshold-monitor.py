@@ -10,6 +10,7 @@ from cms_modules.utils import model_summary_to_string, args_to_dict
 from cms_modules.logging import Logger
 
 import tensorflow as tf
+TensorBoard = tf.keras.callbacks.TensorBoard
 
 # ecbdl14_root = '/Users/jujohnson/git/ECBDL14-Classification'
 ecbdl14_root = '/home/jjohn273/git/ECBDL14-Classification/'
@@ -113,7 +114,7 @@ for run in range(runs):
 
     # init callbacks
     cb = KerasThresholdMonitoringCallback(x, y, logger)
-    tb = TensorBoard(log_dir='logs', histogram_freq=1)
+    tb = TensorBoard(log_dir='logs', histogram_freq=2)
     
     # train model
     logger.log_time('Starting training...').write_to_file()
@@ -132,5 +133,5 @@ for run in range(runs):
     del x, y
 
 logger.log_time('Job complete...').write_to_file()
-logger.log_time(f'All history {"\n".join(results)}')
+logger.log_time("\n".join(results))
 
