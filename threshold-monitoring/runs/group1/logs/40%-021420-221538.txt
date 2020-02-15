@@ -1,0 +1,32 @@
+0 min, 0 sec: Starting trainer
+0 min, 0 sec: Starting run 0
+0 min, 9 sec: Data loaded
+0 min, 9 sec: Positive class size: 59960
+0 min, 9 sec: Negative class size: 89928
+0 min, 9 sec: Positive ratio: 0.40003202391118703
+0 min, 9 sec: Starting training...
+1 min, 3 sec: Completed epoch with threshold: 0.3750000000000002
+1 min, 59 sec: Completed epoch with threshold: 0.43000000000000027
+2 min, 52 sec: Completed epoch with threshold: 0.38500000000000023
+2 min, 52 sec: Trainin complete!
+2 min, 52 sec: Starting run 1
+2 min, 60 sec: Data loaded
+2 min, 60 sec: Positive class size: 59960
+2 min, 60 sec: Negative class size: 89928
+2 min, 60 sec: Positive ratio: 0.40003202391118703
+2 min, 60 sec: Starting training...
+3 min, 54 sec: Completed epoch with threshold: 0.39000000000000024
+4 min, 45 sec: Completed epoch with threshold: 0.3700000000000002
+5 min, 37 sec: Completed epoch with threshold: 0.38500000000000023
+5 min, 37 sec: Trainin complete!
+5 min, 37 sec: Starting run 2
+5 min, 45 sec: Data loaded
+5 min, 45 sec: Positive class size: 59960
+5 min, 45 sec: Negative class size: 89928
+5 min, 45 sec: Positive ratio: 0.40003202391118703
+5 min, 45 sec: Starting training...
+6 min, 37 sec: Completed epoch with threshold: 0.3700000000000002
+7 min, 31 sec: Completed epoch with threshold: 0.39500000000000024
+8 min, 25 sec: Completed epoch with threshold: 0.41000000000000025
+8 min, 25 sec: Trainin complete!
+8 min, 25 sec: Job complete...

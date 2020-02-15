@@ -19,25 +19,6 @@ from model import create_model, write_model
 from CustomCallbacks import KerasThresholdMonitoringCallback
 
 
-
-############################################
-# Parse CLI Args
-############################################
-config = {}
-cli_args = args_to_dict(sys.argv)
-pos_fraction = float(cli_args.get('positive_fraction', 1))
-neg_fraction = float(cli_args.get('negative_fraction', 1))
-epochs = int(cli_args.get('epochs'))
-runs = int(cli_args.get('runs'))
-pos_ratio = cli_args.get('positive_ratio')
-debug = bool((cli_args.get('debug', 'false')))
-positive_ratio = cli_args.get('positive_ratio')
-gpus = int(cli_args.get('gpus', 0))
-
-print(f'Loaded cli args: positive_ratio: {positive_ratio} pos_fraction:{pos_fraction} neg_fraction:{neg_fraction} epochs:{epochs} runs:{runs} debug: {debug}')
-
-
-
 ############################################
 #  Create DNN Config
 ############################################
@@ -46,10 +27,28 @@ config = {
     'learn_rate': 0.001,
     'batch_size': 256,
     'dropout_rate': 0.2,
-    'batchnorm': True,
-    'gpus': gpus
+    'batchnorm': True
 }
 
+
+def write_results(file, results):
+    with open(file, 'a') as fout:
+        fout.write(results + '\n')
+
+
+############################################
+# Parse CLI Args
+############################################
+cli_args = args_to_dict(sys.argv)
+runs = int(cli_args.get('runs'))
+pos_fraction = float(cli_args.get('positive_fraction', 1))
+neg_fraction = float(cli_args.get('negative_fraction', 1))
+positive_ratio = cli_args.get('positive_ratio')
+epochs = int(cli_args.get('epochs', 10))
+debug = cli_args.get('debug', 'false')
+debug = True if debug.lower() == 'true' else False
+
+config_desc = f'pos_ratio:{positive_ratio}-pos:{pos_fraction}-neg:{neg_fraction}'
 
 
 ############################################
@@ -61,9 +60,10 @@ data_key = 'train'
 # outputs
 now = datetime.datetime.today()
 ts = now.strftime("%m%d%y-%H%M%S")
-architecture_output = 'model-architecture.json'
-weights_dir = 'weights'
-
+threshold_outputs = f'{ts}-thresholds.csv'
+# tensorboard
+tensorboard_dir = f'tensorboard/{ts}-{config_desc}/'
+log_file = f'logs/{ts}-{config_desc}.txt'
 
 
 ############################################
@@ -108,29 +108,24 @@ for run in range(runs):
     input_dim = x.shape[1]
     dnn = create_model(input_dim, config)
 
-    if not os.path.isfile(architecture_output):
-        write_model(dnn, architecture_output)
-        print(f'Model architecture saved to {architecture_output}')
-
     # init callbacks
     cb = KerasThresholdMonitoringCallback(x, y, logger)
-    tb = TensorBoard(log_dir='logs', histogram_freq=2)
+    tb = TensorBoard(log_dir=f'{tensorboard_dir}/run-{run}',
+                     write_graph=False,
+                     histogram_freq=2)
     
     # train model
     logger.log_time('Starting training...').write_to_file()
    
-    history = dnn.fit(x, y, epochs=epochs, verbose=1, callbacks=[cb,tb])
+    history = dnn.fit(x, y, epochs=epochs, verbose=0, callbacks=[cb,tb])
     logger.log_time('Trainin complete!').write_to_file()
-    logger.log_time(f'History: {history.history}').write_to_file()
-    results.append(history.history)
-
-    # save weights
-    model_output = f'{positive_ratio}-{run}-model.h5'
-    dnn.save_weights(os.path.join(weights_dir, model_output))
-    logger.log_time(f'Model weights saved to {model_output}')
+    
+    prefix = f'{config_desc},{run}'
+    threshold_data = np.array(history.history['optimal_threshold'], dtype=str)
+    write_results(threshold_outputs, f'{prefix},{",".join(threshold_data)}')
 
     # clean up data
-    del x, y
+    del x, y, threshold_data, history
 
 logger.log_time('Job complete...').write_to_file()
 logger.log_time("\n".join(results))

@@ -36,4 +36,4 @@ class KerasThresholdMonitoringCallback(Callback):
         optimal_threshold = get_best_threshold(self.x, self.y, self.model)
         logs['optimal_threshold'] = optimal_threshold
         if self.logger != None:
-            self.logger.log_time(f'Completed run with threshold: {optimal_threshold}').write_to_file()
+            self.logger.log_time(f'Completed epoch with threshold: {optimal_threshold}').write_to_file()

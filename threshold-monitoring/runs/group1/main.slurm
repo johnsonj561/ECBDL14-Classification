@@ -13,7 +13,7 @@ source ../../../env/bin/activate
 
 srun python ../../threshold-monitor.py \
   debug=true \
-  epochs=20 \
+  epochs=3 \
   runs=3 \
   positive_fraction=1 \
   negative_fraction=0.03282 \
