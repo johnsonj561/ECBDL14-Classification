@@ -60,7 +60,7 @@ data_key = 'train'
 # outputs
 now = datetime.datetime.today()
 ts = now.strftime("%m%d%y-%H%M%S")
-threshold_outputs = f'{ts}-thresholds.csv'
+threshold_outputs = f'../threshold-results.csv'
 # tensorboard
 tensorboard_dir = f'tensorboard/{ts}-{config_desc}/'
 log_file = f'logs/{ts}-{config_desc}.txt'

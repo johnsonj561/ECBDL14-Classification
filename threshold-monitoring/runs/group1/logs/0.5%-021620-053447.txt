@@ -1,0 +1,11 @@
+0 min, 0 sec: Starting trainer
+0 min, 0 sec: Starting run 0
+0 min, 12 sec: Data loaded
+0 min, 12 sec: Positive class size: 13767
+0 min, 12 sec: Negative class size: 2740040
+0 min, 12 sec: Positive ratio: 0.004999261023012869
+0 min, 12 sec: Starting training...
+5 min, 15 sec: Completed epoch with threshold: 0.0
+10 min, 16 sec: Completed epoch with threshold: 0.0
+15 min, 12 sec: Completed epoch with threshold: 0.005
+20 min, 17 sec: Completed epoch with threshold: 0.005

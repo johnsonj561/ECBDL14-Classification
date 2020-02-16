@@ -1,0 +1,572 @@
+0 min, 0 sec: Starting trainer
+0 min, 0 sec: Starting run 0
+0 min, 8 sec: Data loaded
+0 min, 8 sec: Positive class size: 59960
+0 min, 8 sec: Negative class size: 6662
+0 min, 8 sec: Positive ratio: 0.9000030020113476
+0 min, 8 sec: Starting training...
+0 min, 56 sec: Completed epoch with threshold: 0.8750000000000007
+1 min, 42 sec: Completed epoch with threshold: 0.8800000000000007
+2 min, 28 sec: Completed epoch with threshold: 0.9000000000000007
+3 min, 15 sec: Completed epoch with threshold: 0.8850000000000007
+4 min, 2 sec: Completed epoch with threshold: 0.8850000000000007
+4 min, 49 sec: Completed epoch with threshold: 0.8700000000000007
+5 min, 35 sec: Completed epoch with threshold: 0.8700000000000007
+6 min, 21 sec: Completed epoch with threshold: 0.8850000000000007
+7 min, 7 sec: Completed epoch with threshold: 0.9050000000000007
+7 min, 53 sec: Completed epoch with threshold: 0.8750000000000007
+8 min, 42 sec: Completed epoch with threshold: 0.8750000000000007
+9 min, 28 sec: Completed epoch with threshold: 0.8950000000000007
+10 min, 16 sec: Completed epoch with threshold: 0.8700000000000007
+11 min, 5 sec: Completed epoch with threshold: 0.8750000000000007
+11 min, 50 sec: Completed epoch with threshold: 0.8700000000000007
+12 min, 36 sec: Completed epoch with threshold: 0.8800000000000007
+13 min, 24 sec: Completed epoch with threshold: 0.8750000000000007
+14 min, 10 sec: Completed epoch with threshold: 0.8900000000000007
+14 min, 56 sec: Completed epoch with threshold: 0.8650000000000007
+15 min, 42 sec: Completed epoch with threshold: 0.8750000000000007
+16 min, 28 sec: Completed epoch with threshold: 0.8650000000000007
+17 min, 15 sec: Completed epoch with threshold: 0.8750000000000007
+18 min, 4 sec: Completed epoch with threshold: 0.8650000000000007
+18 min, 52 sec: Completed epoch with threshold: 0.8700000000000007
+19 min, 37 sec: Completed epoch with threshold: 0.8650000000000007
+20 min, 24 sec: Completed epoch with threshold: 0.9000000000000007
+21 min, 13 sec: Completed epoch with threshold: 0.8800000000000007
+21 min, 58 sec: Completed epoch with threshold: 0.8600000000000007
+22 min, 43 sec: Completed epoch with threshold: 0.8800000000000007
+23 min, 32 sec: Completed epoch with threshold: 0.8750000000000007
+24 min, 18 sec: Completed epoch with threshold: 0.8750000000000007
+25 min, 5 sec: Completed epoch with threshold: 0.8750000000000007
+25 min, 52 sec: Completed epoch with threshold: 0.8600000000000007
+26 min, 40 sec: Completed epoch with threshold: 0.8550000000000006
+27 min, 30 sec: Completed epoch with threshold: 0.8700000000000007
+28 min, 18 sec: Completed epoch with threshold: 0.8650000000000007
+29 min, 5 sec: Completed epoch with threshold: 0.8550000000000006
+29 min, 50 sec: Completed epoch with threshold: 0.8450000000000006
+30 min, 38 sec: Completed epoch with threshold: 0.8600000000000007
+31 min, 22 sec: Completed epoch with threshold: 0.8450000000000006
+32 min, 8 sec: Completed epoch with threshold: 0.8500000000000006
+32 min, 54 sec: Completed epoch with threshold: 0.8600000000000007
+33 min, 38 sec: Completed epoch with threshold: 0.8500000000000006
+34 min, 24 sec: Completed epoch with threshold: 0.8600000000000007
+35 min, 9 sec: Completed epoch with threshold: 0.8550000000000006
+35 min, 56 sec: Completed epoch with threshold: 0.8450000000000006
+36 min, 42 sec: Completed epoch with threshold: 0.8650000000000007
+37 min, 28 sec: Completed epoch with threshold: 0.8500000000000006
+38 min, 12 sec: Completed epoch with threshold: 0.8550000000000006
+38 min, 57 sec: Completed epoch with threshold: 0.8550000000000006
+38 min, 57 sec: Trainin complete!
+38 min, 57 sec: Starting run 1
+39 min, 4 sec: Data loaded
+39 min, 4 sec: Positive class size: 59960
+39 min, 4 sec: Negative class size: 6662
+39 min, 4 sec: Positive ratio: 0.9000030020113476
+39 min, 4 sec: Starting training...
+39 min, 51 sec: Completed epoch with threshold: 0.9000000000000007
+40 min, 39 sec: Completed epoch with threshold: 0.8950000000000007
+41 min, 25 sec: Completed epoch with threshold: 0.8800000000000007
+42 min, 11 sec: Completed epoch with threshold: 0.8700000000000007
+42 min, 59 sec: Completed epoch with threshold: 0.8850000000000007
+43 min, 43 sec: Completed epoch with threshold: 0.8950000000000007
+44 min, 31 sec: Completed epoch with threshold: 0.8950000000000007
+45 min, 14 sec: Completed epoch with threshold: 0.8700000000000007
+46 min, 1 sec: Completed epoch with threshold: 0.8950000000000007
+46 min, 47 sec: Completed epoch with threshold: 0.8850000000000007
+47 min, 34 sec: Completed epoch with threshold: 0.9050000000000007
+48 min, 20 sec: Completed epoch with threshold: 0.8850000000000007
+49 min, 6 sec: Completed epoch with threshold: 0.8800000000000007
+49 min, 51 sec: Completed epoch with threshold: 0.8900000000000007
+50 min, 37 sec: Completed epoch with threshold: 0.8650000000000007
+51 min, 21 sec: Completed epoch with threshold: 0.8450000000000006
+52 min, 7 sec: Completed epoch with threshold: 0.8700000000000007
+52 min, 53 sec: Completed epoch with threshold: 0.8800000000000007
+53 min, 40 sec: Completed epoch with threshold: 0.8750000000000007
+54 min, 27 sec: Completed epoch with threshold: 0.8800000000000007
+55 min, 13 sec: Completed epoch with threshold: 0.8600000000000007
+56 min, 1 sec: Completed epoch with threshold: 0.8450000000000006
+56 min, 48 sec: Completed epoch with threshold: 0.8700000000000007
+57 min, 34 sec: Completed epoch with threshold: 0.8850000000000007
+58 min, 19 sec: Completed epoch with threshold: 0.8650000000000007
+59 min, 3 sec: Completed epoch with threshold: 0.8750000000000007
+59 min, 48 sec: Completed epoch with threshold: 0.8450000000000006
+60 min, 34 sec: Completed epoch with threshold: 0.8750000000000007
+61 min, 21 sec: Completed epoch with threshold: 0.8700000000000007
+62 min, 10 sec: Completed epoch with threshold: 0.8700000000000007
+62 min, 56 sec: Completed epoch with threshold: 0.8750000000000007
+63 min, 42 sec: Completed epoch with threshold: 0.8600000000000007
+64 min, 28 sec: Completed epoch with threshold: 0.8600000000000007
+65 min, 14 sec: Completed epoch with threshold: 0.8450000000000006
+65 min, 59 sec: Completed epoch with threshold: 0.8750000000000007
+66 min, 44 sec: Completed epoch with threshold: 0.8500000000000006
+67 min, 29 sec: Completed epoch with threshold: 0.8600000000000007
+68 min, 14 sec: Completed epoch with threshold: 0.8550000000000006
+69 min, 0 sec: Completed epoch with threshold: 0.8700000000000007
+69 min, 48 sec: Completed epoch with threshold: 0.8400000000000006
+70 min, 33 sec: Completed epoch with threshold: 0.8600000000000007
+71 min, 20 sec: Completed epoch with threshold: 0.8650000000000007
+72 min, 8 sec: Completed epoch with threshold: 0.8600000000000007
+72 min, 52 sec: Completed epoch with threshold: 0.8500000000000006
+73 min, 37 sec: Completed epoch with threshold: 0.8300000000000006
+74 min, 24 sec: Completed epoch with threshold: 0.8550000000000006
+75 min, 11 sec: Completed epoch with threshold: 0.8550000000000006
+75 min, 57 sec: Completed epoch with threshold: 0.8650000000000007
+76 min, 41 sec: Completed epoch with threshold: 0.8400000000000006
+77 min, 28 sec: Completed epoch with threshold: 0.8800000000000007
+77 min, 28 sec: Trainin complete!
+77 min, 28 sec: Starting run 2
+77 min, 35 sec: Data loaded
+77 min, 35 sec: Positive class size: 59960
+77 min, 35 sec: Negative class size: 6662
+77 min, 35 sec: Positive ratio: 0.9000030020113476
+77 min, 36 sec: Starting training...
+78 min, 24 sec: Completed epoch with threshold: 0.8600000000000007
+79 min, 14 sec: Completed epoch with threshold: 0.8700000000000007
+80 min, 1 sec: Completed epoch with threshold: 0.9000000000000007
+80 min, 51 sec: Completed epoch with threshold: 0.8900000000000007
+81 min, 38 sec: Completed epoch with threshold: 0.8800000000000007
+82 min, 25 sec: Completed epoch with threshold: 0.8850000000000007
+83 min, 11 sec: Completed epoch with threshold: 0.8850000000000007
+83 min, 57 sec: Completed epoch with threshold: 0.8650000000000007
+84 min, 43 sec: Completed epoch with threshold: 0.8600000000000007
+85 min, 29 sec: Completed epoch with threshold: 0.8750000000000007
+86 min, 14 sec: Completed epoch with threshold: 0.8750000000000007
+87 min, 3 sec: Completed epoch with threshold: 0.8850000000000007
+87 min, 49 sec: Completed epoch with threshold: 0.8800000000000007
+88 min, 39 sec: Completed epoch with threshold: 0.8800000000000007
+89 min, 26 sec: Completed epoch with threshold: 0.8650000000000007
+90 min, 13 sec: Completed epoch with threshold: 0.8850000000000007
+91 min, 1 sec: Completed epoch with threshold: 0.8750000000000007
+91 min, 47 sec: Completed epoch with threshold: 0.8750000000000007
+92 min, 34 sec: Completed epoch with threshold: 0.8900000000000007
+93 min, 21 sec: Completed epoch with threshold: 0.8400000000000006
+94 min, 8 sec: Completed epoch with threshold: 0.8650000000000007
+94 min, 53 sec: Completed epoch with threshold: 0.8650000000000007
+95 min, 37 sec: Completed epoch with threshold: 0.8650000000000007
+96 min, 23 sec: Completed epoch with threshold: 0.8600000000000007
+97 min, 12 sec: Completed epoch with threshold: 0.8700000000000007
+97 min, 59 sec: Completed epoch with threshold: 0.8500000000000006
+98 min, 44 sec: Completed epoch with threshold: 0.8650000000000007
+99 min, 30 sec: Completed epoch with threshold: 0.8450000000000006
+100 min, 18 sec: Completed epoch with threshold: 0.8800000000000007
+101 min, 5 sec: Completed epoch with threshold: 0.8600000000000007
+101 min, 51 sec: Completed epoch with threshold: 0.8700000000000007
+102 min, 37 sec: Completed epoch with threshold: 0.8700000000000007
+103 min, 22 sec: Completed epoch with threshold: 0.8600000000000007
+104 min, 6 sec: Completed epoch with threshold: 0.8350000000000006
+104 min, 49 sec: Completed epoch with threshold: 0.8350000000000006
+105 min, 34 sec: Completed epoch with threshold: 0.8600000000000007
+106 min, 18 sec: Completed epoch with threshold: 0.8200000000000006
+107 min, 4 sec: Completed epoch with threshold: 0.8550000000000006
+107 min, 49 sec: Completed epoch with threshold: 0.8450000000000006
+108 min, 33 sec: Completed epoch with threshold: 0.8450000000000006
+109 min, 18 sec: Completed epoch with threshold: 0.8550000000000006
+110 min, 3 sec: Completed epoch with threshold: 0.8700000000000007
+110 min, 48 sec: Completed epoch with threshold: 0.8550000000000006
+111 min, 33 sec: Completed epoch with threshold: 0.8600000000000007
+112 min, 17 sec: Completed epoch with threshold: 0.8350000000000006
+113 min, 1 sec: Completed epoch with threshold: 0.8450000000000006
+113 min, 45 sec: Completed epoch with threshold: 0.8200000000000006
+114 min, 29 sec: Completed epoch with threshold: 0.8200000000000006
+115 min, 13 sec: Completed epoch with threshold: 0.8400000000000006
+115 min, 55 sec: Completed epoch with threshold: 0.8200000000000006
+115 min, 55 sec: Trainin complete!
+115 min, 55 sec: Starting run 3
+116 min, 2 sec: Data loaded
+116 min, 2 sec: Positive class size: 59960
+116 min, 2 sec: Negative class size: 6662
+116 min, 2 sec: Positive ratio: 0.9000030020113476
+116 min, 3 sec: Starting training...
+116 min, 48 sec: Completed epoch with threshold: 0.8650000000000007
+117 min, 34 sec: Completed epoch with threshold: 0.9000000000000007
+118 min, 19 sec: Completed epoch with threshold: 0.8850000000000007
+119 min, 6 sec: Completed epoch with threshold: 0.8850000000000007
+119 min, 53 sec: Completed epoch with threshold: 0.8900000000000007
+120 min, 39 sec: Completed epoch with threshold: 0.8700000000000007
+121 min, 25 sec: Completed epoch with threshold: 0.8650000000000007
+122 min, 10 sec: Completed epoch with threshold: 0.8450000000000006
+122 min, 55 sec: Completed epoch with threshold: 0.8800000000000007
+123 min, 41 sec: Completed epoch with threshold: 0.8850000000000007
+124 min, 27 sec: Completed epoch with threshold: 0.8950000000000007
+125 min, 14 sec: Completed epoch with threshold: 0.8750000000000007
+126 min, 1 sec: Completed epoch with threshold: 0.8900000000000007
+126 min, 48 sec: Completed epoch with threshold: 0.8950000000000007
+127 min, 33 sec: Completed epoch with threshold: 0.8700000000000007
+128 min, 19 sec: Completed epoch with threshold: 0.8800000000000007
+129 min, 4 sec: Completed epoch with threshold: 0.8650000000000007
+129 min, 51 sec: Completed epoch with threshold: 0.8800000000000007
+130 min, 37 sec: Completed epoch with threshold: 0.8700000000000007
+131 min, 24 sec: Completed epoch with threshold: 0.8900000000000007
+132 min, 9 sec: Completed epoch with threshold: 0.8550000000000006
+132 min, 55 sec: Completed epoch with threshold: 0.8550000000000006
+133 min, 41 sec: Completed epoch with threshold: 0.8550000000000006
+134 min, 26 sec: Completed epoch with threshold: 0.8400000000000006
+135 min, 12 sec: Completed epoch with threshold: 0.8850000000000007
+135 min, 58 sec: Completed epoch with threshold: 0.8700000000000007
+136 min, 45 sec: Completed epoch with threshold: 0.8750000000000007
+137 min, 32 sec: Completed epoch with threshold: 0.8650000000000007
+138 min, 18 sec: Completed epoch with threshold: 0.8850000000000007
+139 min, 5 sec: Completed epoch with threshold: 0.8600000000000007
+139 min, 50 sec: Completed epoch with threshold: 0.8600000000000007
+140 min, 34 sec: Completed epoch with threshold: 0.8500000000000006
+141 min, 20 sec: Completed epoch with threshold: 0.8700000000000007
+142 min, 5 sec: Completed epoch with threshold: 0.8600000000000007
+142 min, 53 sec: Completed epoch with threshold: 0.8550000000000006
+143 min, 40 sec: Completed epoch with threshold: 0.8700000000000007
+144 min, 26 sec: Completed epoch with threshold: 0.8350000000000006
+145 min, 11 sec: Completed epoch with threshold: 0.8550000000000006
+145 min, 59 sec: Completed epoch with threshold: 0.8450000000000006
+146 min, 46 sec: Completed epoch with threshold: 0.8600000000000007
+147 min, 33 sec: Completed epoch with threshold: 0.8650000000000007
+148 min, 22 sec: Completed epoch with threshold: 0.8550000000000006
+149 min, 11 sec: Completed epoch with threshold: 0.8600000000000007
+149 min, 58 sec: Completed epoch with threshold: 0.8600000000000007
+150 min, 45 sec: Completed epoch with threshold: 0.8600000000000007
+151 min, 30 sec: Completed epoch with threshold: 0.8450000000000006
+152 min, 14 sec: Completed epoch with threshold: 0.8700000000000007
+153 min, 2 sec: Completed epoch with threshold: 0.8450000000000006
+153 min, 49 sec: Completed epoch with threshold: 0.8450000000000006
+154 min, 37 sec: Completed epoch with threshold: 0.8550000000000006
+154 min, 37 sec: Trainin complete!
+154 min, 37 sec: Starting run 4
+154 min, 44 sec: Data loaded
+154 min, 44 sec: Positive class size: 59960
+154 min, 44 sec: Negative class size: 6662
+154 min, 44 sec: Positive ratio: 0.9000030020113476
+154 min, 45 sec: Starting training...
+155 min, 35 sec: Completed epoch with threshold: 0.8950000000000007
+156 min, 24 sec: Completed epoch with threshold: 0.8900000000000007
+157 min, 10 sec: Completed epoch with threshold: 0.8950000000000007
+157 min, 57 sec: Completed epoch with threshold: 0.8850000000000007
+158 min, 42 sec: Completed epoch with threshold: 0.8850000000000007
+159 min, 27 sec: Completed epoch with threshold: 0.8550000000000006
+160 min, 14 sec: Completed epoch with threshold: 0.8900000000000007
+161 min, 0 sec: Completed epoch with threshold: 0.8900000000000007
+161 min, 46 sec: Completed epoch with threshold: 0.8850000000000007
+162 min, 33 sec: Completed epoch with threshold: 0.8800000000000007
+163 min, 21 sec: Completed epoch with threshold: 0.8950000000000007
+164 min, 7 sec: Completed epoch with threshold: 0.8950000000000007
+164 min, 52 sec: Completed epoch with threshold: 0.8800000000000007
+165 min, 40 sec: Completed epoch with threshold: 0.8850000000000007
+166 min, 27 sec: Completed epoch with threshold: 0.8700000000000007
+167 min, 15 sec: Completed epoch with threshold: 0.8900000000000007
+168 min, 1 sec: Completed epoch with threshold: 0.8700000000000007
+168 min, 48 sec: Completed epoch with threshold: 0.8900000000000007
+169 min, 34 sec: Completed epoch with threshold: 0.8700000000000007
+170 min, 20 sec: Completed epoch with threshold: 0.8750000000000007
+171 min, 9 sec: Completed epoch with threshold: 0.8800000000000007
+171 min, 57 sec: Completed epoch with threshold: 0.8750000000000007
+172 min, 45 sec: Completed epoch with threshold: 0.8600000000000007
+173 min, 31 sec: Completed epoch with threshold: 0.8650000000000007
+174 min, 18 sec: Completed epoch with threshold: 0.8650000000000007
+175 min, 2 sec: Completed epoch with threshold: 0.8500000000000006
+175 min, 50 sec: Completed epoch with threshold: 0.8650000000000007
+176 min, 37 sec: Completed epoch with threshold: 0.8800000000000007
+177 min, 26 sec: Completed epoch with threshold: 0.8800000000000007
+178 min, 12 sec: Completed epoch with threshold: 0.8600000000000007
+179 min, 2 sec: Completed epoch with threshold: 0.8550000000000006
+179 min, 47 sec: Completed epoch with threshold: 0.8450000000000006
+180 min, 32 sec: Completed epoch with threshold: 0.8500000000000006
+181 min, 18 sec: Completed epoch with threshold: 0.8550000000000006
+182 min, 4 sec: Completed epoch with threshold: 0.8800000000000007
+182 min, 50 sec: Completed epoch with threshold: 0.8650000000000007
+183 min, 36 sec: Completed epoch with threshold: 0.8750000000000007
+184 min, 19 sec: Completed epoch with threshold: 0.8450000000000006
+185 min, 8 sec: Completed epoch with threshold: 0.8600000000000007
+185 min, 55 sec: Completed epoch with threshold: 0.8550000000000006
+186 min, 40 sec: Completed epoch with threshold: 0.8350000000000006
+187 min, 25 sec: Completed epoch with threshold: 0.8550000000000006
+188 min, 10 sec: Completed epoch with threshold: 0.8350000000000006
+188 min, 57 sec: Completed epoch with threshold: 0.8450000000000006
+189 min, 43 sec: Completed epoch with threshold: 0.8600000000000007
+190 min, 30 sec: Completed epoch with threshold: 0.8650000000000007
+191 min, 16 sec: Completed epoch with threshold: 0.8400000000000006
+192 min, 3 sec: Completed epoch with threshold: 0.8550000000000006
+192 min, 47 sec: Completed epoch with threshold: 0.8400000000000006
+193 min, 30 sec: Completed epoch with threshold: 0.8350000000000006
+193 min, 30 sec: Trainin complete!
+193 min, 30 sec: Starting run 5
+193 min, 38 sec: Data loaded
+193 min, 38 sec: Positive class size: 59960
+193 min, 38 sec: Negative class size: 6662
+193 min, 38 sec: Positive ratio: 0.9000030020113476
+193 min, 38 sec: Starting training...
+194 min, 27 sec: Completed epoch with threshold: 0.8700000000000007
+195 min, 13 sec: Completed epoch with threshold: 0.8900000000000007
+196 min, 1 sec: Completed epoch with threshold: 0.9050000000000007
+196 min, 47 sec: Completed epoch with threshold: 0.8950000000000007
+197 min, 33 sec: Completed epoch with threshold: 0.8700000000000007
+198 min, 21 sec: Completed epoch with threshold: 0.8950000000000007
+199 min, 11 sec: Completed epoch with threshold: 0.8850000000000007
+199 min, 57 sec: Completed epoch with threshold: 0.9000000000000007
+200 min, 46 sec: Completed epoch with threshold: 0.9050000000000007
+201 min, 33 sec: Completed epoch with threshold: 0.8900000000000007
+202 min, 20 sec: Completed epoch with threshold: 0.8800000000000007
+203 min, 6 sec: Completed epoch with threshold: 0.8850000000000007
+203 min, 55 sec: Completed epoch with threshold: 0.8850000000000007
+204 min, 42 sec: Completed epoch with threshold: 0.9000000000000007
+205 min, 29 sec: Completed epoch with threshold: 0.8750000000000007
+206 min, 15 sec: Completed epoch with threshold: 0.8900000000000007
+207 min, 1 sec: Completed epoch with threshold: 0.8700000000000007
+207 min, 48 sec: Completed epoch with threshold: 0.8700000000000007
+208 min, 36 sec: Completed epoch with threshold: 0.8800000000000007
+209 min, 21 sec: Completed epoch with threshold: 0.8500000000000006
+210 min, 6 sec: Completed epoch with threshold: 0.8700000000000007
+210 min, 52 sec: Completed epoch with threshold: 0.8650000000000007
+211 min, 39 sec: Completed epoch with threshold: 0.8700000000000007
+212 min, 24 sec: Completed epoch with threshold: 0.8450000000000006
+213 min, 10 sec: Completed epoch with threshold: 0.8700000000000007
+213 min, 57 sec: Completed epoch with threshold: 0.8700000000000007
+214 min, 42 sec: Completed epoch with threshold: 0.8400000000000006
+215 min, 30 sec: Completed epoch with threshold: 0.8600000000000007
+216 min, 14 sec: Completed epoch with threshold: 0.8550000000000006
+217 min, 1 sec: Completed epoch with threshold: 0.8700000000000007
+217 min, 47 sec: Completed epoch with threshold: 0.8450000000000006
+218 min, 31 sec: Completed epoch with threshold: 0.8300000000000006
+219 min, 14 sec: Completed epoch with threshold: 0.8650000000000007
+219 min, 58 sec: Completed epoch with threshold: 0.8600000000000007
+220 min, 43 sec: Completed epoch with threshold: 0.8650000000000007
+221 min, 30 sec: Completed epoch with threshold: 0.8650000000000007
+222 min, 16 sec: Completed epoch with threshold: 0.8450000000000006
+223 min, 4 sec: Completed epoch with threshold: 0.8550000000000006
+223 min, 52 sec: Completed epoch with threshold: 0.8700000000000007
+224 min, 37 sec: Completed epoch with threshold: 0.8500000000000006
+225 min, 23 sec: Completed epoch with threshold: 0.8650000000000007
+226 min, 9 sec: Completed epoch with threshold: 0.8700000000000007
+226 min, 55 sec: Completed epoch with threshold: 0.8550000000000006
+227 min, 39 sec: Completed epoch with threshold: 0.8600000000000007
+228 min, 25 sec: Completed epoch with threshold: 0.8450000000000006
+229 min, 7 sec: Completed epoch with threshold: 0.8250000000000006
+229 min, 54 sec: Completed epoch with threshold: 0.8450000000000006
+230 min, 39 sec: Completed epoch with threshold: 0.8400000000000006
+231 min, 25 sec: Completed epoch with threshold: 0.8500000000000006
+232 min, 9 sec: Completed epoch with threshold: 0.8500000000000006
+232 min, 9 sec: Trainin complete!
+232 min, 9 sec: Starting run 6
+232 min, 17 sec: Data loaded
+232 min, 17 sec: Positive class size: 59960
+232 min, 17 sec: Negative class size: 6662
+232 min, 17 sec: Positive ratio: 0.9000030020113476
+232 min, 17 sec: Starting training...
+233 min, 4 sec: Completed epoch with threshold: 0.8800000000000007
+233 min, 51 sec: Completed epoch with threshold: 0.8900000000000007
+234 min, 40 sec: Completed epoch with threshold: 0.8900000000000007
+235 min, 28 sec: Completed epoch with threshold: 0.8850000000000007
+236 min, 17 sec: Completed epoch with threshold: 0.8900000000000007
+237 min, 3 sec: Completed epoch with threshold: 0.8700000000000007
+237 min, 49 sec: Completed epoch with threshold: 0.8800000000000007
+238 min, 34 sec: Completed epoch with threshold: 0.8900000000000007
+239 min, 19 sec: Completed epoch with threshold: 0.8950000000000007
+240 min, 6 sec: Completed epoch with threshold: 0.8850000000000007
+240 min, 53 sec: Completed epoch with threshold: 0.8850000000000007
+241 min, 42 sec: Completed epoch with threshold: 0.8750000000000007
+242 min, 31 sec: Completed epoch with threshold: 0.8900000000000007
+243 min, 18 sec: Completed epoch with threshold: 0.8600000000000007
+244 min, 4 sec: Completed epoch with threshold: 0.8600000000000007
+244 min, 51 sec: Completed epoch with threshold: 0.8900000000000007
+245 min, 36 sec: Completed epoch with threshold: 0.8700000000000007
+246 min, 21 sec: Completed epoch with threshold: 0.8850000000000007
+247 min, 7 sec: Completed epoch with threshold: 0.8750000000000007
+247 min, 53 sec: Completed epoch with threshold: 0.8750000000000007
+248 min, 39 sec: Completed epoch with threshold: 0.8650000000000007
+249 min, 23 sec: Completed epoch with threshold: 0.8650000000000007
+250 min, 10 sec: Completed epoch with threshold: 0.8750000000000007
+250 min, 58 sec: Completed epoch with threshold: 0.8650000000000007
+251 min, 49 sec: Completed epoch with threshold: 0.8800000000000007
+252 min, 39 sec: Completed epoch with threshold: 0.8800000000000007
+253 min, 24 sec: Completed epoch with threshold: 0.8600000000000007
+254 min, 11 sec: Completed epoch with threshold: 0.8650000000000007
+255 min, 2 sec: Completed epoch with threshold: 0.8950000000000007
+255 min, 52 sec: Completed epoch with threshold: 0.8750000000000007
+256 min, 35 sec: Completed epoch with threshold: 0.8350000000000006
+257 min, 22 sec: Completed epoch with threshold: 0.8550000000000006
+258 min, 6 sec: Completed epoch with threshold: 0.8600000000000007
+258 min, 52 sec: Completed epoch with threshold: 0.8650000000000007
+259 min, 38 sec: Completed epoch with threshold: 0.8550000000000006
+260 min, 23 sec: Completed epoch with threshold: 0.8700000000000007
+261 min, 9 sec: Completed epoch with threshold: 0.8700000000000007
+261 min, 54 sec: Completed epoch with threshold: 0.8350000000000006
+262 min, 40 sec: Completed epoch with threshold: 0.8750000000000007
+263 min, 25 sec: Completed epoch with threshold: 0.8650000000000007
+264 min, 10 sec: Completed epoch with threshold: 0.8450000000000006
+264 min, 56 sec: Completed epoch with threshold: 0.8600000000000007
+265 min, 40 sec: Completed epoch with threshold: 0.8650000000000007
+266 min, 25 sec: Completed epoch with threshold: 0.8450000000000006
+267 min, 10 sec: Completed epoch with threshold: 0.8450000000000006
+267 min, 56 sec: Completed epoch with threshold: 0.8600000000000007
+268 min, 41 sec: Completed epoch with threshold: 0.8600000000000007
+269 min, 27 sec: Completed epoch with threshold: 0.8600000000000007
+270 min, 14 sec: Completed epoch with threshold: 0.8550000000000006
+270 min, 57 sec: Completed epoch with threshold: 0.8350000000000006
+270 min, 57 sec: Trainin complete!
+270 min, 57 sec: Starting run 7
+271 min, 6 sec: Data loaded
+271 min, 6 sec: Positive class size: 59960
+271 min, 6 sec: Negative class size: 6662
+271 min, 6 sec: Positive ratio: 0.9000030020113476
+271 min, 6 sec: Starting training...
+271 min, 52 sec: Completed epoch with threshold: 0.8750000000000007
+272 min, 37 sec: Completed epoch with threshold: 0.9000000000000007
+273 min, 24 sec: Completed epoch with threshold: 0.8600000000000007
+274 min, 11 sec: Completed epoch with threshold: 0.8800000000000007
+274 min, 58 sec: Completed epoch with threshold: 0.8800000000000007
+275 min, 45 sec: Completed epoch with threshold: 0.8800000000000007
+276 min, 31 sec: Completed epoch with threshold: 0.8650000000000007
+277 min, 19 sec: Completed epoch with threshold: 0.8650000000000007
+278 min, 5 sec: Completed epoch with threshold: 0.8850000000000007
+278 min, 50 sec: Completed epoch with threshold: 0.8700000000000007
+279 min, 35 sec: Completed epoch with threshold: 0.8700000000000007
+280 min, 20 sec: Completed epoch with threshold: 0.8750000000000007
+281 min, 6 sec: Completed epoch with threshold: 0.8800000000000007
+281 min, 51 sec: Completed epoch with threshold: 0.8950000000000007
+282 min, 36 sec: Completed epoch with threshold: 0.8550000000000006
+283 min, 20 sec: Completed epoch with threshold: 0.8650000000000007
+284 min, 6 sec: Completed epoch with threshold: 0.8750000000000007
+284 min, 52 sec: Completed epoch with threshold: 0.8950000000000007
+285 min, 36 sec: Completed epoch with threshold: 0.8700000000000007
+286 min, 22 sec: Completed epoch with threshold: 0.8800000000000007
+287 min, 8 sec: Completed epoch with threshold: 0.8650000000000007
+287 min, 55 sec: Completed epoch with threshold: 0.8650000000000007
+288 min, 40 sec: Completed epoch with threshold: 0.8650000000000007
+289 min, 25 sec: Completed epoch with threshold: 0.8800000000000007
+290 min, 11 sec: Completed epoch with threshold: 0.8850000000000007
+290 min, 55 sec: Completed epoch with threshold: 0.8650000000000007
+291 min, 40 sec: Completed epoch with threshold: 0.8650000000000007
+292 min, 27 sec: Completed epoch with threshold: 0.8750000000000007
+293 min, 14 sec: Completed epoch with threshold: 0.8700000000000007
+293 min, 60 sec: Completed epoch with threshold: 0.8700000000000007
+294 min, 44 sec: Completed epoch with threshold: 0.8600000000000007
+295 min, 29 sec: Completed epoch with threshold: 0.8400000000000006
+296 min, 15 sec: Completed epoch with threshold: 0.8700000000000007
+296 min, 60 sec: Completed epoch with threshold: 0.8600000000000007
+297 min, 45 sec: Completed epoch with threshold: 0.8650000000000007
+298 min, 33 sec: Completed epoch with threshold: 0.8600000000000007
+299 min, 19 sec: Completed epoch with threshold: 0.8650000000000007
+300 min, 7 sec: Completed epoch with threshold: 0.8700000000000007
+300 min, 53 sec: Completed epoch with threshold: 0.8550000000000006
+301 min, 41 sec: Completed epoch with threshold: 0.8600000000000007
+302 min, 27 sec: Completed epoch with threshold: 0.8550000000000006
+303 min, 12 sec: Completed epoch with threshold: 0.8400000000000006
+303 min, 58 sec: Completed epoch with threshold: 0.8450000000000006
+304 min, 44 sec: Completed epoch with threshold: 0.8450000000000006
+305 min, 30 sec: Completed epoch with threshold: 0.8500000000000006
+306 min, 17 sec: Completed epoch with threshold: 0.8550000000000006
+307 min, 2 sec: Completed epoch with threshold: 0.8400000000000006
+307 min, 46 sec: Completed epoch with threshold: 0.8450000000000006
+308 min, 30 sec: Completed epoch with threshold: 0.8600000000000007
+309 min, 15 sec: Completed epoch with threshold: 0.8450000000000006
+309 min, 15 sec: Trainin complete!
+309 min, 15 sec: Starting run 8
+309 min, 22 sec: Data loaded
+309 min, 22 sec: Positive class size: 59960
+309 min, 22 sec: Negative class size: 6662
+309 min, 22 sec: Positive ratio: 0.9000030020113476
+309 min, 22 sec: Starting training...
+310 min, 10 sec: Completed epoch with threshold: 0.8850000000000007
+310 min, 58 sec: Completed epoch with threshold: 0.8900000000000007
+311 min, 45 sec: Completed epoch with threshold: 0.8900000000000007
+312 min, 30 sec: Completed epoch with threshold: 0.8850000000000007
+313 min, 15 sec: Completed epoch with threshold: 0.8800000000000007
+313 min, 60 sec: Completed epoch with threshold: 0.8900000000000007
+314 min, 44 sec: Completed epoch with threshold: 0.8900000000000007
+315 min, 30 sec: Completed epoch with threshold: 0.8900000000000007
+316 min, 18 sec: Completed epoch with threshold: 0.8700000000000007
+317 min, 5 sec: Completed epoch with threshold: 0.8800000000000007
+317 min, 55 sec: Completed epoch with threshold: 0.9000000000000007
+318 min, 47 sec: Completed epoch with threshold: 0.9000000000000007
+319 min, 36 sec: Completed epoch with threshold: 0.8700000000000007
+320 min, 23 sec: Completed epoch with threshold: 0.8950000000000007
+321 min, 11 sec: Completed epoch with threshold: 0.9000000000000007
+321 min, 56 sec: Completed epoch with threshold: 0.8700000000000007
+322 min, 43 sec: Completed epoch with threshold: 0.8600000000000007
+323 min, 29 sec: Completed epoch with threshold: 0.8750000000000007
+324 min, 14 sec: Completed epoch with threshold: 0.8750000000000007
+324 min, 58 sec: Completed epoch with threshold: 0.8750000000000007
+325 min, 43 sec: Completed epoch with threshold: 0.8950000000000007
+326 min, 28 sec: Completed epoch with threshold: 0.8700000000000007
+327 min, 18 sec: Completed epoch with threshold: 0.8950000000000007
+328 min, 6 sec: Completed epoch with threshold: 0.8600000000000007
+328 min, 53 sec: Completed epoch with threshold: 0.8650000000000007
+329 min, 40 sec: Completed epoch with threshold: 0.8650000000000007
+330 min, 28 sec: Completed epoch with threshold: 0.8700000000000007
+331 min, 15 sec: Completed epoch with threshold: 0.8500000000000006
+332 min, 0 sec: Completed epoch with threshold: 0.8800000000000007
+332 min, 49 sec: Completed epoch with threshold: 0.8600000000000007
+333 min, 37 sec: Completed epoch with threshold: 0.8750000000000007
+334 min, 26 sec: Completed epoch with threshold: 0.8700000000000007
+335 min, 12 sec: Completed epoch with threshold: 0.8700000000000007
+335 min, 58 sec: Completed epoch with threshold: 0.8800000000000007
+336 min, 41 sec: Completed epoch with threshold: 0.8450000000000006
+337 min, 26 sec: Completed epoch with threshold: 0.8750000000000007
+338 min, 12 sec: Completed epoch with threshold: 0.8700000000000007
+339 min, 1 sec: Completed epoch with threshold: 0.8800000000000007
+339 min, 46 sec: Completed epoch with threshold: 0.8400000000000006
+340 min, 33 sec: Completed epoch with threshold: 0.8700000000000007
+341 min, 18 sec: Completed epoch with threshold: 0.8700000000000007
+342 min, 1 sec: Completed epoch with threshold: 0.8550000000000006
+342 min, 50 sec: Completed epoch with threshold: 0.8650000000000007
+343 min, 36 sec: Completed epoch with threshold: 0.8750000000000007
+344 min, 23 sec: Completed epoch with threshold: 0.8500000000000006
+345 min, 9 sec: Completed epoch with threshold: 0.8750000000000007
+345 min, 56 sec: Completed epoch with threshold: 0.8600000000000007
+346 min, 43 sec: Completed epoch with threshold: 0.8700000000000007
+347 min, 29 sec: Completed epoch with threshold: 0.8500000000000006
+348 min, 14 sec: Completed epoch with threshold: 0.8500000000000006
+348 min, 14 sec: Trainin complete!
+348 min, 14 sec: Starting run 9
+348 min, 22 sec: Data loaded
+348 min, 22 sec: Positive class size: 59960
+348 min, 22 sec: Negative class size: 6662
+348 min, 22 sec: Positive ratio: 0.9000030020113476
+348 min, 22 sec: Starting training...
+349 min, 11 sec: Completed epoch with threshold: 0.8950000000000007
+349 min, 59 sec: Completed epoch with threshold: 0.8950000000000007
+350 min, 50 sec: Completed epoch with threshold: 0.8850000000000007
+351 min, 40 sec: Completed epoch with threshold: 0.8900000000000007
+352 min, 29 sec: Completed epoch with threshold: 0.8950000000000007
+353 min, 20 sec: Completed epoch with threshold: 0.8850000000000007
+354 min, 8 sec: Completed epoch with threshold: 0.8900000000000007
+354 min, 55 sec: Completed epoch with threshold: 0.8850000000000007
+355 min, 45 sec: Completed epoch with threshold: 0.9000000000000007
+356 min, 32 sec: Completed epoch with threshold: 0.8800000000000007
+357 min, 19 sec: Completed epoch with threshold: 0.8800000000000007
+358 min, 4 sec: Completed epoch with threshold: 0.8600000000000007
+358 min, 51 sec: Completed epoch with threshold: 0.8800000000000007
+359 min, 36 sec: Completed epoch with threshold: 0.8750000000000007
+360 min, 24 sec: Completed epoch with threshold: 0.8850000000000007
+361 min, 11 sec: Completed epoch with threshold: 0.8750000000000007
+361 min, 60 sec: Completed epoch with threshold: 0.8850000000000007
+362 min, 46 sec: Completed epoch with threshold: 0.8700000000000007
+363 min, 31 sec: Completed epoch with threshold: 0.8750000000000007
+364 min, 17 sec: Completed epoch with threshold: 0.8800000000000007
+365 min, 3 sec: Completed epoch with threshold: 0.8800000000000007
+365 min, 49 sec: Completed epoch with threshold: 0.8700000000000007
+366 min, 35 sec: Completed epoch with threshold: 0.8650000000000007
+367 min, 22 sec: Completed epoch with threshold: 0.8700000000000007
+368 min, 8 sec: Completed epoch with threshold: 0.8750000000000007
+368 min, 54 sec: Completed epoch with threshold: 0.8500000000000006
+369 min, 40 sec: Completed epoch with threshold: 0.8900000000000007
+370 min, 25 sec: Completed epoch with threshold: 0.8650000000000007
+371 min, 10 sec: Completed epoch with threshold: 0.8600000000000007
+371 min, 55 sec: Completed epoch with threshold: 0.8650000000000007
+372 min, 37 sec: Completed epoch with threshold: 0.8600000000000007
+373 min, 21 sec: Completed epoch with threshold: 0.8500000000000006
+374 min, 9 sec: Completed epoch with threshold: 0.8700000000000007
+374 min, 55 sec: Completed epoch with threshold: 0.8500000000000006
+375 min, 43 sec: Completed epoch with threshold: 0.8650000000000007
+376 min, 29 sec: Completed epoch with threshold: 0.8750000000000007
+377 min, 14 sec: Completed epoch with threshold: 0.8600000000000007
+377 min, 59 sec: Completed epoch with threshold: 0.8600000000000007
+378 min, 45 sec: Completed epoch with threshold: 0.8500000000000006
+379 min, 31 sec: Completed epoch with threshold: 0.8600000000000007
+380 min, 16 sec: Completed epoch with threshold: 0.8800000000000007
+381 min, 3 sec: Completed epoch with threshold: 0.8350000000000006
+381 min, 46 sec: Completed epoch with threshold: 0.8500000000000006
+382 min, 30 sec: Completed epoch with threshold: 0.8450000000000006
+383 min, 14 sec: Completed epoch with threshold: 0.8350000000000006
+384 min, 1 sec: Completed epoch with threshold: 0.8700000000000007
+384 min, 48 sec: Completed epoch with threshold: 0.8550000000000006
+385 min, 34 sec: Completed epoch with threshold: 0.8500000000000006
+386 min, 19 sec: Completed epoch with threshold: 0.8200000000000006
+387 min, 5 sec: Completed epoch with threshold: 0.8550000000000006
+387 min, 5 sec: Trainin complete!
+387 min, 5 sec: Job complete...
