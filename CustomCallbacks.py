@@ -26,14 +26,16 @@ class KerasRocAucCallback(Callback):
             self.logger.log_time(f'Epoch: {epoch}  {self.metric_key}: {auc}').write_to_file()
 
 class KerasThresholdMonitoringCallback(Callback):
-    def __init__(self, x, y, logger=None):
+    def __init__(self, x, y, logger=None, delta_thresh=0.005):
         super(Callback, self).__init__()
         self.x = x
         self.y = y
         self.logger = logger
+        self.delta_thresh = delta_thresh
 
     def on_epoch_end(self, epoch, logs={}, generator=None):
-        optimal_threshold = get_best_threshold(self.x, self.y, self.model)
+        optimal_threshold = get_best_threshold(self.x, self.y, self.model, self.delta_thresh)
         logs['optimal_threshold'] = optimal_threshold
         if self.logger != None:
             self.logger.log_time(f'Completed epoch with threshold: {optimal_threshold}').write_to_file()
+

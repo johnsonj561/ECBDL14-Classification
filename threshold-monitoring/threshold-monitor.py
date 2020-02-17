@@ -47,6 +47,8 @@ positive_ratio = cli_args.get('positive_ratio')
 epochs = int(cli_args.get('epochs', 10))
 debug = cli_args.get('debug', 'false')
 debug = True if debug.lower() == 'true' else False
+delta_thresh = float(cli_args.get('delta_thresh', 0.005))
+
 
 config_desc = f'pos_ratio:{positive_ratio}-pos:{pos_fraction}-neg:{neg_fraction}'
 
@@ -109,7 +111,7 @@ for run in range(runs):
     dnn = create_model(input_dim, config)
 
     # init callbacks
-    cb = KerasThresholdMonitoringCallback(x, y, logger)
+    cb = KerasThresholdMonitoringCallback(x, y, logger, delta_thresh)
     tb = TensorBoard(log_dir=f'{tensorboard_dir}/run-{run}',
                      write_graph=False,
                      histogram_freq=2)

@@ -1,0 +1,7 @@
+0 min, 0 sec: Starting trainer
+0 min, 0 sec: Starting run 0
+0 min, 12 sec: Data loaded
+0 min, 12 sec: Positive class size: 27678
+0 min, 12 sec: Negative class size: 2740040
+0 min, 12 sec: Positive ratio: 0.010000296272958445
+0 min, 12 sec: Starting training...
